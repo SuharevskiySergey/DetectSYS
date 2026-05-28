@@ -1,0 +1,5 @@
+[0519/120546.993:ERROR:backend_impl.cc(1041)] Critical error found -8
+[0519/120547.863:WARNING:storage_block-inl.h(146)] Failed data load.
+[0519/120744.206:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled
+[0519/162733.603:WARNING:gpu_process_host.cc(1296)] The GPU process has crashed 1 time(s)
+[0519/162733.632:ERROR:network_service_instance_impl.cc(330)] Network service crashed, restarting service.
