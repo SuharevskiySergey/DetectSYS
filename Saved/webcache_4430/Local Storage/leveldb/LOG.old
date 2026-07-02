@@ -1,3 +1,9 @@
-2026/06/11-00:50:16.477 594c Reusing MANIFEST D:/Unreaall/Detectsystemp/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
-2026/06/11-00:50:16.479 594c Recovering log #3
-2026/06/11-00:50:16.480 594c Reusing old log D:/Unreaall/Detectsystemp/Saved/webcache_4430\Local Storage\leveldb/000003.log 
+2026/06/11-11:01:04.002 5820 Reusing MANIFEST D:/Unreaall/Detectsystemp/Saved/webcache_4430\Local Storage\leveldb/MANIFEST-000001
+2026/06/11-11:01:04.003 5820 Recovering log #3
+2026/06/11-11:01:04.004 5820 Reusing old log D:/Unreaall/Detectsystemp/Saved/webcache_4430\Local Storage\leveldb/000003.log 
+2026/06/11-11:15:11.512 5fe8 Level-0 table #5: started
+2026/06/11-11:15:11.518 5fe8 Level-0 table #5: 60434 bytes OK
+2026/06/11-11:15:11.520 5fe8 Delete type=0 #3
+2026/06/11-11:18:14.134 5c54 Level-0 table #7: started
+2026/06/11-11:18:14.137 5c54 Level-0 table #7: 63924 bytes OK
+2026/06/11-11:18:14.141 5c54 Delete type=0 #4

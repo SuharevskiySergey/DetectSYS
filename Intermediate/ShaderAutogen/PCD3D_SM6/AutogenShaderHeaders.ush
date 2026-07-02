@@ -60,12 +60,10 @@ FGBufferData  DecodeGBufferDataDirect(float4 InMRT1,
 		 
 	float CustomNativeDepth,
 	float4 AnisotropicData,
-	float4 SGGXData,
 	uint CustomStencil,
 	float SceneDepth,
 	bool bGetNormalizedNormal,
-	bool bChecker,
-	bool bForceUnlitOrDefaultLit = false)
+	bool bChecker)
 {
 	FGBufferData Ret = (FGBufferData)0;
 	float3 WorldNormal_Compressed = 0.0f;
@@ -88,10 +86,8 @@ FGBufferData  DecodeGBufferDataDirect(float4 InMRT1,
 	Ret.CustomData.w = InMRT4.w;
 	
 	Ret.WorldNormal = DecodeNormalHelper(WorldNormal_Compressed);
-	if(bForceUnlitOrDefaultLit && Ret.ShadingModelID != 0) Ret.ShadingModelID = 1;
 	Ret.WorldTangent = AnisotropicData.xyz;
 	Ret.Anisotropy = AnisotropicData.w;
-	Ret.NormalDistribution = DecodeNormal(SGGXData.xyz);
 
 	GBufferPostDecode(Ret,bChecker,bGetNormalizedNormal);
 
@@ -107,14 +103,13 @@ FGBufferData  DecodeGBufferDataDirect(float4 InMRT1,
 #if FEATURE_LEVEL >= FEATURE_LEVEL_SM5
 
 // @param PixelPos relative to left top of the rendertarget (not viewport)
-FGBufferData DecodeGBufferDataUV(float2 UV, bool bGetNormalizedNormal = true, bool bForceUnlitOrDefaultLit = false)
+FGBufferData DecodeGBufferDataUV(float2 UV, bool bGetNormalizedNormal = true)
 {
 	float CustomNativeDepth = Texture2DSampleLevel(SceneTexturesStruct.CustomDepthTexture, SceneTexturesStruct_CustomDepthTextureSampler, UV, 0).r;
 	int2 IntUV = (int2)trunc(UV * View.BufferSizeAndInvSize.xy * View.BufferToSceneTextureScale.xy);
 	uint CustomStencil = SceneTexturesStruct.CustomStencilTexture.Load(int3(IntUV, 0)) STENCIL_COMPONENT_SWIZZLE;
 	float SceneDepth = CalcSceneDepth(UV);
 	float4 AnisotropicData = Texture2DSampleLevel(SceneTexturesStruct.GBufferFTexture, SceneTexturesStruct_GBufferFTextureSampler, UV, 0).xyzw;
-	float4 SGGXData = Texture2DSampleLevel(SceneTexturesStruct.GBufferSGGXTexture, SceneTexturesStruct_SGGXTextureSampler, UV, 0).xyzw;
 
 	float4 InMRT1 = Texture2DSampleLevel(SceneTexturesStruct.GBufferATexture, SceneTexturesStruct_GBufferATextureSampler, UV, 0).xyzw;
 	float4 InMRT2 = Texture2DSampleLevel(SceneTexturesStruct.GBufferBTexture, SceneTexturesStruct_GBufferBTextureSampler, UV, 0).xyzw;
@@ -128,25 +123,22 @@ FGBufferData DecodeGBufferDataUV(float2 UV, bool bGetNormalizedNormal = true, bo
 		 
 		CustomNativeDepth,
 		AnisotropicData,
-		SGGXData,
 		CustomStencil,
 		SceneDepth,
 		bGetNormalizedNormal,
-		CheckerFromSceneColorUV(UV),
-		bForceUnlitOrDefaultLit);
+		CheckerFromSceneColorUV(UV));
 
 	return Ret;
 }
 
 
 // @param PixelPos relative to left top of the rendertarget (not viewport)
-FGBufferData DecodeGBufferDataUint(uint2 PixelPos, bool bGetNormalizedNormal = true, bool bForceUnlitOrDefaultLit = false)
+FGBufferData DecodeGBufferDataUint(uint2 PixelPos, bool bGetNormalizedNormal = true)
 {
 	float CustomNativeDepth = SceneTexturesStruct.CustomDepthTexture.Load(int3(PixelPos, 0)).r;
 	uint CustomStencil = SceneTexturesStruct.CustomStencilTexture.Load(int3(PixelPos, 0)) STENCIL_COMPONENT_SWIZZLE;
 	float SceneDepth = CalcSceneDepth(PixelPos);
 	float4 AnisotropicData = SceneTexturesStruct.GBufferFTexture.Load(int3(PixelPos, 0)).xyzw;
-	float4 SGGXData = SceneTexturesStruct.GBufferSGGXTexture.Load(int3(PixelPos, 0)).xyzw;
 
 	float4 InMRT1 = SceneTexturesStruct.GBufferATexture.Load(int3(PixelPos, 0)).xyzw;
 	float4 InMRT2 = SceneTexturesStruct.GBufferBTexture.Load(int3(PixelPos, 0)).xyzw;
@@ -160,26 +152,23 @@ FGBufferData DecodeGBufferDataUint(uint2 PixelPos, bool bGetNormalizedNormal = t
 		 
 		CustomNativeDepth,
 		AnisotropicData,
-		SGGXData,
 		CustomStencil,
 		SceneDepth,
 		bGetNormalizedNormal,
-		CheckerFromPixelPos(PixelPos),
-		bForceUnlitOrDefaultLit);
+		CheckerFromPixelPos(PixelPos));
 
 	return Ret;
 }
 
 
 // @param PixelPos relative to left top of the rendertarget (not viewport)
-FGBufferData DecodeGBufferDataSceneTextures(float2 UV, bool bGetNormalizedNormal = true, bool bForceUnlitOrDefaultLit = false)
+FGBufferData DecodeGBufferDataSceneTextures(float2 UV, bool bGetNormalizedNormal = true)
 {
 	uint CustomStencil = 0;
 	float CustomNativeDepth = 0;
 	float DeviceZ = SampleDeviceZFromSceneTexturesTempCopy(UV);
 	float SceneDepth = ConvertFromDeviceZ(DeviceZ);
 	float4 AnisotropicData = GBufferFTexture.SampleLevel(GBufferFTextureSampler, UV, 0).xyzw;
-	float4 SGGXData = GBufferSGGXTexture.SampleLevel(GBufferSGGXTextureSampler, UV, 0).xyzw;
 
 	float4 InMRT1 = GBufferATexture.SampleLevel(GBufferATextureSampler, UV, 0).xyzw;
 	float4 InMRT2 = GBufferBTexture.SampleLevel(GBufferBTextureSampler, UV, 0).xyzw;
@@ -193,26 +182,23 @@ FGBufferData DecodeGBufferDataSceneTextures(float2 UV, bool bGetNormalizedNormal
 		 
 		CustomNativeDepth,
 		AnisotropicData,
-		SGGXData,
 		CustomStencil,
 		SceneDepth,
 		bGetNormalizedNormal,
-		CheckerFromSceneColorUV(UV),
-		bForceUnlitOrDefaultLit);
+		CheckerFromSceneColorUV(UV));
 
 	return Ret;
 }
 
 
 // @param PixelPos relative to left top of the rendertarget (not viewport)
-FGBufferData DecodeGBufferDataSceneTexturesLoad(uint2 PixelCoord, bool bGetNormalizedNormal = true, bool bForceUnlitOrDefaultLit = false)
+FGBufferData DecodeGBufferDataSceneTexturesLoad(uint2 PixelCoord, bool bGetNormalizedNormal = true)
 {
 	uint CustomStencil = 0;
 	float CustomNativeDepth = 0;
 	float DeviceZ = SceneDepthTexture.Load(int3(PixelCoord, 0)).r;
 	float SceneDepth = ConvertFromDeviceZ(DeviceZ);
 	float4 AnisotropicData = GBufferFTexture.Load(int3(PixelCoord, 0)).xyzw;
-	float4 SGGXData = GBufferSGGXTexture.Load(int3(PixelCoord, 0)).xyzw;
 
 	float4 InMRT1 = GBufferATexture.Load(int3(PixelCoord, 0)).xyzw;
 	float4 InMRT2 = GBufferBTexture.Load(int3(PixelCoord, 0)).xyzw;
@@ -226,12 +212,10 @@ FGBufferData DecodeGBufferDataSceneTexturesLoad(uint2 PixelCoord, bool bGetNorma
 		 
 		CustomNativeDepth,
 		AnisotropicData,
-		SGGXData,
 		CustomStencil,
 		SceneDepth,
 		bGetNormalizedNormal,
-		CheckerFromPixelPos(PixelCoord),
-		bForceUnlitOrDefaultLit);
+		CheckerFromPixelPos(PixelCoord));
 
 	return Ret;
 }
@@ -294,12 +278,10 @@ FGBufferData  DecodeGBufferDataDirect(float4 InMRT1,
 		 
 	float CustomNativeDepth,
 	float4 AnisotropicData,
-	float4 SGGXData,
 	uint CustomStencil,
 	float SceneDepth,
 	bool bGetNormalizedNormal,
-	bool bChecker,
-	bool bForceUnlitOrDefaultLit = false)
+	bool bChecker)
 {
 	FGBufferData Ret = (FGBufferData)0;
 	float3 WorldNormal_Compressed = 0.0f;
@@ -326,10 +308,8 @@ FGBufferData  DecodeGBufferDataDirect(float4 InMRT1,
 	Ret.CustomData.w = InMRT5.w;
 	
 	Ret.WorldNormal = DecodeNormalHelper(WorldNormal_Compressed);
-	if(bForceUnlitOrDefaultLit && Ret.ShadingModelID != 0) Ret.ShadingModelID = 1;
 	Ret.WorldTangent = AnisotropicData.xyz;
 	Ret.Anisotropy = AnisotropicData.w;
-	Ret.NormalDistribution = DecodeNormal(SGGXData.xyz);
 
 	GBufferPostDecode(Ret,bChecker,bGetNormalizedNormal);
 
@@ -345,14 +325,13 @@ FGBufferData  DecodeGBufferDataDirect(float4 InMRT1,
 #if FEATURE_LEVEL >= FEATURE_LEVEL_SM5
 
 // @param PixelPos relative to left top of the rendertarget (not viewport)
-FGBufferData DecodeGBufferDataUV(float2 UV, bool bGetNormalizedNormal = true, bool bForceUnlitOrDefaultLit = false)
+FGBufferData DecodeGBufferDataUV(float2 UV, bool bGetNormalizedNormal = true)
 {
 	float CustomNativeDepth = Texture2DSampleLevel(SceneTexturesStruct.CustomDepthTexture, SceneTexturesStruct_CustomDepthTextureSampler, UV, 0).r;
 	int2 IntUV = (int2)trunc(UV * View.BufferSizeAndInvSize.xy * View.BufferToSceneTextureScale.xy);
 	uint CustomStencil = SceneTexturesStruct.CustomStencilTexture.Load(int3(IntUV, 0)) STENCIL_COMPONENT_SWIZZLE;
 	float SceneDepth = CalcSceneDepth(UV);
 	float4 AnisotropicData = Texture2DSampleLevel(SceneTexturesStruct.GBufferFTexture, SceneTexturesStruct_GBufferFTextureSampler, UV, 0).xyzw;
-	float4 SGGXData = Texture2DSampleLevel(SceneTexturesStruct.GBufferSGGXTexture, SceneTexturesStruct_SGGXTextureSampler, UV, 0).xyzw;
 
 	float4 InMRT1 = Texture2DSampleLevel(SceneTexturesStruct.GBufferATexture, SceneTexturesStruct_GBufferATextureSampler, UV, 0).xyzw;
 	float4 InMRT2 = Texture2DSampleLevel(SceneTexturesStruct.GBufferBTexture, SceneTexturesStruct_GBufferBTextureSampler, UV, 0).xyzw;
@@ -368,25 +347,22 @@ FGBufferData DecodeGBufferDataUV(float2 UV, bool bGetNormalizedNormal = true, bo
 		 
 		CustomNativeDepth,
 		AnisotropicData,
-		SGGXData,
 		CustomStencil,
 		SceneDepth,
 		bGetNormalizedNormal,
-		CheckerFromSceneColorUV(UV),
-		bForceUnlitOrDefaultLit);
+		CheckerFromSceneColorUV(UV));
 
 	return Ret;
 }
 
 
 // @param PixelPos relative to left top of the rendertarget (not viewport)
-FGBufferData DecodeGBufferDataUint(uint2 PixelPos, bool bGetNormalizedNormal = true, bool bForceUnlitOrDefaultLit = false)
+FGBufferData DecodeGBufferDataUint(uint2 PixelPos, bool bGetNormalizedNormal = true)
 {
 	float CustomNativeDepth = SceneTexturesStruct.CustomDepthTexture.Load(int3(PixelPos, 0)).r;
 	uint CustomStencil = SceneTexturesStruct.CustomStencilTexture.Load(int3(PixelPos, 0)) STENCIL_COMPONENT_SWIZZLE;
 	float SceneDepth = CalcSceneDepth(PixelPos);
 	float4 AnisotropicData = SceneTexturesStruct.GBufferFTexture.Load(int3(PixelPos, 0)).xyzw;
-	float4 SGGXData = SceneTexturesStruct.GBufferSGGXTexture.Load(int3(PixelPos, 0)).xyzw;
 
 	float4 InMRT1 = SceneTexturesStruct.GBufferATexture.Load(int3(PixelPos, 0)).xyzw;
 	float4 InMRT2 = SceneTexturesStruct.GBufferBTexture.Load(int3(PixelPos, 0)).xyzw;
@@ -402,26 +378,23 @@ FGBufferData DecodeGBufferDataUint(uint2 PixelPos, bool bGetNormalizedNormal = t
 		 
 		CustomNativeDepth,
 		AnisotropicData,
-		SGGXData,
 		CustomStencil,
 		SceneDepth,
 		bGetNormalizedNormal,
-		CheckerFromPixelPos(PixelPos),
-		bForceUnlitOrDefaultLit);
+		CheckerFromPixelPos(PixelPos));
 
 	return Ret;
 }
 
 
 // @param PixelPos relative to left top of the rendertarget (not viewport)
-FGBufferData DecodeGBufferDataSceneTextures(float2 UV, bool bGetNormalizedNormal = true, bool bForceUnlitOrDefaultLit = false)
+FGBufferData DecodeGBufferDataSceneTextures(float2 UV, bool bGetNormalizedNormal = true)
 {
 	uint CustomStencil = 0;
 	float CustomNativeDepth = 0;
 	float DeviceZ = SampleDeviceZFromSceneTexturesTempCopy(UV);
 	float SceneDepth = ConvertFromDeviceZ(DeviceZ);
 	float4 AnisotropicData = GBufferFTexture.SampleLevel(GBufferFTextureSampler, UV, 0).xyzw;
-	float4 SGGXData = GBufferSGGXTexture.SampleLevel(GBufferSGGXTextureSampler, UV, 0).xyzw;
 
 	float4 InMRT1 = GBufferATexture.SampleLevel(GBufferATextureSampler, UV, 0).xyzw;
 	float4 InMRT2 = GBufferBTexture.SampleLevel(GBufferBTextureSampler, UV, 0).xyzw;
@@ -437,26 +410,23 @@ FGBufferData DecodeGBufferDataSceneTextures(float2 UV, bool bGetNormalizedNormal
 		 
 		CustomNativeDepth,
 		AnisotropicData,
-		SGGXData,
 		CustomStencil,
 		SceneDepth,
 		bGetNormalizedNormal,
-		CheckerFromSceneColorUV(UV),
-		bForceUnlitOrDefaultLit);
+		CheckerFromSceneColorUV(UV));
 
 	return Ret;
 }
 
 
 // @param PixelPos relative to left top of the rendertarget (not viewport)
-FGBufferData DecodeGBufferDataSceneTexturesLoad(uint2 PixelCoord, bool bGetNormalizedNormal = true, bool bForceUnlitOrDefaultLit = false)
+FGBufferData DecodeGBufferDataSceneTexturesLoad(uint2 PixelCoord, bool bGetNormalizedNormal = true)
 {
 	uint CustomStencil = 0;
 	float CustomNativeDepth = 0;
 	float DeviceZ = SceneDepthTexture.Load(int3(PixelCoord, 0)).r;
 	float SceneDepth = ConvertFromDeviceZ(DeviceZ);
 	float4 AnisotropicData = GBufferFTexture.Load(int3(PixelCoord, 0)).xyzw;
-	float4 SGGXData = GBufferSGGXTexture.Load(int3(PixelCoord, 0)).xyzw;
 
 	float4 InMRT1 = GBufferATexture.Load(int3(PixelCoord, 0)).xyzw;
 	float4 InMRT2 = GBufferBTexture.Load(int3(PixelCoord, 0)).xyzw;
@@ -472,12 +442,10 @@ FGBufferData DecodeGBufferDataSceneTexturesLoad(uint2 PixelCoord, bool bGetNorma
 		 
 		CustomNativeDepth,
 		AnisotropicData,
-		SGGXData,
 		CustomStencil,
 		SceneDepth,
 		bGetNormalizedNormal,
-		CheckerFromPixelPos(PixelCoord),
-		bForceUnlitOrDefaultLit);
+		CheckerFromPixelPos(PixelCoord));
 
 	return Ret;
 }
