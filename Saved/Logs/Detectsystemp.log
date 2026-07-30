@@ -4804,3 +4804,27 @@ FPackageName: Skipped package /Game/PhysicMaterials/PM_Gravel has a valid, mount
 [2026.07.30-09.57.41:675][606]LogBlueprintUserMessages: [BPC_Search_SYS] 3
 [2026.07.30-09.57.46:685][650]LogBlueprintUserMessages: [BPC_Search_SYS] 3
 [2026.07.30-09.57.51:685][665]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.57.56:686][680]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.58.01:686][695]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.58.06:687][710]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.58.11:686][725]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.58.16:687][740]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.58.21:689][755]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.58.26:688][770]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.58.31:255][867]LogUObjectHash: Compacting FUObjectHashTables data took   1.31ms
+[2026.07.30-09.58.31:259][867]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.07.30-09.58.31:274][867]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/S3/UEBFA9Z5SNSI45UYUC7E2J
+[2026.07.30-09.58.31:274][867]LogSavePackage: Moving 'D:/Unreaall/Detectsystemp/Saved/UEBFA9Z5SNSI45UYUC7E2JDD0BC1C6416CD24AAA716A9108B02E9B.tmp' to 'D:/Unreaall/Detectsystemp/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/5/S3/UEBFA9Z5SNSI45UYUC7E2J.uasset'
+[2026.07.30-09.58.31:280][867]LogFileHelpers: InternalPromptForCheckoutAndSave took 21.920 ms (total: 936.373 ms)
+[2026.07.30-09.58.31:284][867]LogContentValidation: Display: Starting to validate 1 assets
+[2026.07.30-09.58.31:284][867]LogContentValidation: Enabled validators:
+[2026.07.30-09.58.31:284][867]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.07.30-09.58.31:284][867]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.07.30-09.58.31:284][867]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.07.30-09.58.31:284][867]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.07.30-09.58.31:284][867]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.07.30-09.58.31:284][867]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.07.30-09.58.31:286][867]AssetCheck: /Game/ThirdPerson/Lvl_ThirdPerson Validating asset
+[2026.07.30-09.58.31:702][902]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.58.36:771][  8]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.07.30-09.58.41:770][ 23]LogBlueprintUserMessages: [BPC_Search_SYS] 3
