@@ -11507,3 +11507,1535 @@ FPackageName: Skipped package /Game/PhysicMaterials/PM_Gravel has a valid, mount
 [2026.08.08-16.52.00:923][575]LogBlueprintUserMessages: [BPC_Search_SYS] 3
 [2026.08.08-16.52.05:925][590]LogBlueprintUserMessages: [BPC_Search_SYS] 3
 [2026.08.08-16.52.10:927][605]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.52.15:926][620]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.52.20:928][635]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.52.25:928][650]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.52.30:927][665]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.52.35:928][680]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.52.40:930][695]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.52.45:931][710]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.52.50:945][845]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.52.55:953][201]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.00:961][555]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.05:961][911]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.10:965][266]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.15:978][621]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.20:990][976]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.25:997][333]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.31:005][683]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.36:017][ 40]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.41:029][396]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.46:029][751]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.51:040][107]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.53.56:043][465]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.01:043][824]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.06:051][181]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.11:055][540]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.16:058][897]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.21:063][255]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.26:077][615]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.31:085][975]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.36:096][332]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.41:105][689]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.46:109][ 47]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.51:123][404]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.54.56:127][761]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.01:136][117]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.06:147][475]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.08:770][661]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 89498.687500
+[2026.08.08-16.55.08:952][674]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.08.08-16.55.08:952][674]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 89498.875000, Update Interval: 308.785675
+[2026.08.08-16.55.11:153][833]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.16:155][190]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.21:163][550]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.26:173][907]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.31:185][267]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.36:197][625]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.41:201][985]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.46:216][341]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.51:225][697]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.55.56:233][ 53]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.01:236][408]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.06:237][767]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.11:241][124]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.16:255][485]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.21:263][843]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.26:273][202]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.31:281][559]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.36:282][916]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.41:285][274]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.46:286][631]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.51:297][990]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.56.56:308][348]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.01:307][706]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.06:318][ 63]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.11:322][422]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.16:332][780]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.21:339][140]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.26:350][498]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.31:358][856]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.36:365][214]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.41:370][573]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.46:378][929]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.51:387][286]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.57.56:387][639]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.01:408][792]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.06:408][807]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.11:408][822]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.16:408][837]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.21:409][852]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.26:422][982]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.31:437][259]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.36:440][603]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.41:451][ 29]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.46:459][426]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.51:466][834]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.56:475][248]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.58.57:666][339]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.58.57:666][339]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.58.57:666][339]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.01:478][647]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.06:488][ 65]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.11:491][482]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.15:186][748]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.15:186][748]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.15:186][748]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.16:498][839]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.16:746][859]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.16:746][859]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.16:746][859]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.19:156][  6]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.19:156][  6]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.19:156][  6]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.19:187][  6]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.19:187][  6]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.19:187][  6]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.20:750][117]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.20:750][117]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.20:750][117]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.21:501][172]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.26:509][335]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.31:566][682]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.33:623][822]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.33:623][822]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.33:623][822]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.36:572][ 60]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.39:025][243]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.39:025][243]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.39:025][243]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.40:559][360]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.40:559][360]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.40:559][360]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.41:583][442]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.46:593][848]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.51:779][186]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-16.59.55:478][198]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.55:478][198]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.55:478][198]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.55:956][209]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.55:956][209]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.55:956][209]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.56:356][242]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.56:356][242]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.56:356][242]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-16.59.56:786][277]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.01:798][643]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.03:168][751]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.03:168][751]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.03:168][751]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.03:193][751]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.03:194][751]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.03:194][751]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.06:933][ 42]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.11:008][ 96]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.11:008][ 96]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.11:008][ 96]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.11:944][175]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.16:568][533]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.16:568][533]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.16:568][533]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.16:950][563]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.20:053][832]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.20:053][832]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.20:053][832]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.21:951][970]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.22:796][ 39]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.22:796][ 39]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.22:796][ 39]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.24:219][156]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.24:219][156]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.24:219][156]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.25:138][232]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.25:138][232]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.25:138][232]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.26:964][364]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.29:973][621]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.29:973][621]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.29:973][621]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.29:997][621]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.29:997][621]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.29:997][621]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.32:240][728]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.34:360][799]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.34:360][799]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.34:360][799]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.37:241][  6]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.38:253][ 88]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.38:253][ 88]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.38:253][ 88]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.38:279][ 88]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.38:279][ 88]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.38:279][ 88]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.42:251][409]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.44:593][601]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.44:593][601]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.44:593][601]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.47:254][707]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.50:068][885]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.50:069][885]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.50:069][885]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.50:091][885]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.50:091][885]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.50:091][885]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.00.52:255][ 51]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.00.57:270][382]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.00:140][548]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.00:140][548]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.00:140][548]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.01:948][654]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.01:948][654]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.01:948][654]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.02:273][672]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.07:282][969]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.08:072][ 13]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 89881.460938
+[2026.08.08-17.01.08:278][ 25]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.08.08-17.01.08:279][ 25]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 89881.632812, Update Interval: 356.731476
+[2026.08.08-17.01.12:284][304]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.12:436][314]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.12:436][314]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.12:436][314]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.14:086][425]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.14:086][425]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.14:086][425]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.17:337][501]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.21:418][513]LogUObjectHash: Compacting FUObjectHashTables data took   1.35ms
+[2026.08.08-17.01.21:421][513]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.21:421][513]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.21:421][513]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.21:430][513]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.21:430][513]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.21:430][513]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.22:231][554]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.08.08-17.01.22:231][554]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try] ([2] browsable assets)...
+[2026.08.08-17.01.22:245][554]OBJ SavePackage:     Rendered thumbnail for [ControlRigBlueprint /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.CR_Beh_Anim_Try]
+[2026.08.08-17.01.22:245][554]OBJ SavePackage: Finished generating thumbnails for package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try]
+[2026.08.08-17.01.22:245][554]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try" FILE="D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset" SILENT=true
+[2026.08.08-17.01.22:356][554]LogSavePackage: Moving output files for package: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try
+[2026.08.08-17.01.22:356][554]LogSavePackage: Moving 'D:/Unreaall/Detectsystemp/Saved/CR_Beh_Anim_Try268785C9445F5D654015779467EAC6A5.tmp' to 'D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset'
+[2026.08.08-17.01.22:381][554]LogFileHelpers: InternalPromptForCheckoutAndSave took 151.324 ms (total: 1.71 sec)
+[2026.08.08-17.01.22:423][554]LogContentValidation: Display: Starting to validate 1 assets
+[2026.08.08-17.01.22:423][554]LogContentValidation: Enabled validators:
+[2026.08.08-17.01.22:423][554]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.08.08-17.01.22:423][554]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.08.08-17.01.22:423][554]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.08.08-17.01.22:423][554]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.08.08-17.01.22:423][554]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.08.08-17.01.22:423][554]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.08.08-17.01.22:423][554]AssetCheck: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try Validating asset
+[2026.08.08-17.01.22:478][555]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.27:478][915]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.32:490][279]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.37:500][642]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.37:680][653]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.37:680][653]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.37:680][653]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.42:511][994]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.47:527][255]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.50:277][393]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.50:277][393]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.50:277][393]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.52:673][469]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.01.55:753][478]LogUObjectHash: Compacting FUObjectHashTables data took   1.03ms
+[2026.08.08-17.01.55:759][478]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.55:759][478]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.55:759][478]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.55:766][478]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.55:766][478]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.55:766][478]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.01.57:118][539]LogPSOHitching: Encountered 50 PSO creation hitches so far (0 graphics, 50 compute). 0 of them were precached.
+[2026.08.08-17.01.57:696][568]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.00:647][778]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.02.00:647][778]LogWorld: BeginTearingDown for /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.02.00:647][778]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.08.08-17.02.00:648][778]LogWorld: UWorld::CleanupWorld for Lvl_ThirdPerson, bSessionEnded=true, bCleanupResources=true
+[2026.08.08-17.02.00:649][778]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.02.00:649][778]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson
+[2026.08.08-17.02.00:650][778]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.08.08-17.02.00:653][778]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.02.00:675][778]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.02.00:676][778]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 14
+[2026.08.08-17.02.00:676][778]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=14, StreamState=4
+[2026.08.08-17.02.00:679][778]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=14, StreamState=2
+[2026.08.08-17.02.00:686][778]LogUObjectHash: Compacting FUObjectHashTables data took   1.30ms
+[2026.08.08-17.02.00:756][779]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2026.08.08-17.02.01:344][832]LogContentBundle: [Lvl_ThirdPerson(Editor)] Generating Streaming for 0 Content Bundles.
+[2026.08.08-17.02.01:344][832]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' started...
+[2026.08.08-17.02.01:345][832]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' took 582 us (total: 58.662 ms)
+[2026.08.08-17.02.01:345][832]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.08.08-17.02.01:376][832]LogPlayLevel: Creating play world package: /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.02.01:381][832]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE started...
+[2026.08.08-17.02.01:382][832]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE took 964 us (total: 15.303 ms)
+[2026.08.08-17.02.01:382][832]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006274s)
+[2026.08.08-17.02.01:382][832]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Lvl_ThirdPerson.Lvl_ThirdPerson to /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson (0.006324s)
+[2026.08.08-17.02.01:405][832]LogUObjectHash: Compacting FUObjectHashTables data took   1.09ms
+[2026.08.08-17.02.01:407][832]LogChaosDD: Creating Chaos Debug Draw Scene for world Lvl_ThirdPerson
+[2026.08.08-17.02.01:408][832]LogWorldPartition: ULevel::OnLevelLoaded(Lvl_ThirdPerson)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2026.08.08-17.02.01:408][832]LogWorldPartition: Display: WorldPartition initialize started...
+[2026.08.08-17.02.01:408][832]LogWorldPartition: UWorldPartition::Initialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2026.08.08-17.02.01:408][832]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2026.08.08-17.02.01:410][832]LogWorldPartition: Display: WorldPartition initialize took 1.313 ms (total: 367.814 ms)
+[2026.08.08-17.02.01:410][832]LogPlayLevel: PIE: World Init took: (0.003170s)
+[2026.08.08-17.02.01:410][832]LogAudio: Display: Creating Audio Device:                 Id: 15, Scope: Unique, Realtime: True
+[2026.08.08-17.02.01:410][832]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.08.08-17.02.01:410][832]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.08.08-17.02.01:410][832]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.08.08-17.02.01:410][832]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.08.08-17.02.01:410][832]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.08.08-17.02.01:410][832]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.08.08-17.02.01:410][832]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.08.08-17.02.01:410][832]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.08.08-17.02.01:410][832]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.08.08-17.02.01:410][832]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.08.08-17.02.01:410][832]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.08.08-17.02.01:414][832]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.08.08-17.02.01:438][832]LogAudioMixer: Display: Using Audio Hardware Device Динамики (Realtek(R) Audio)
+[2026.08.08-17.02.01:438][832]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.08.08-17.02.01:438][832]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.08.08-17.02.01:438][832]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.08.08-17.02.01:440][832]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=15
+[2026.08.08-17.02.01:440][832]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=15
+[2026.08.08-17.02.01:442][832]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=15
+[2026.08.08-17.02.01:442][832]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=15
+[2026.08.08-17.02.01:442][832]LogInit: FAudioDevice initialized with ID 15.
+[2026.08.08-17.02.01:442][832]LogAudio: Display: Audio Device (ID: 15) registered with world 'Lvl_ThirdPerson'.
+[2026.08.08-17.02.01:442][832]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 15
+[2026.08.08-17.02.01:446][832]LogLoad: Game class is 'BP_ThirdPersonGameMode_C'
+[2026.08.08-17.02.01:449][832]LogWorld: Bringing World /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson up for play (max tick rate 0) at 2026.08.08-20.02.01
+[2026.08.08-17.02.01:450][832]LogWorld: Bringing up level for play took: 0.003466
+[2026.08.08-17.02.01:452][832]LogOnline: OSS: Created online subsystem instance for: :Context_23
+[2026.08.08-17.02.01:453][832]PIE: Server logged in
+[2026.08.08-17.02.01:456][832]PIE: Play in editor total start time 0.112 seconds.
+[2026.08.08-17.02.01:526][832]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 512
+[2026.08.08-17.02.06:393][172]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.11:393][187]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.16:394][202]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.21:419][403]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.26:735][686]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.31:734][ 34]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.32:237][ 74]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.02.32:237][ 74]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.02.32:237][ 74]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.02.33:583][162]LogUObjectHash: Compacting FUObjectHashTables data took   0.99ms
+[2026.08.08-17.02.33:585][162]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.02.33:585][162]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.02.33:585][162]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.02.33:592][162]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.02.33:592][162]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.02.33:592][162]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.02.36:741][347]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.41:748][828]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.46:786][986]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.51:788][  1]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.02.56:788][ 16]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.01:789][ 31]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.06:789][ 46]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.11:790][240]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.14:312][445]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.03.14:312][445]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.03.14:312][445]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.03.17:059][507]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.22:060][522]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.27:060][537]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.32:060][552]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.37:060][567]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.42:061][582]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.47:062][597]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.52:083][612]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.03.57:063][627]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.02:062][642]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.07:063][657]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.12:065][672]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.17:064][687]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.22:066][702]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.27:067][717]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.32:066][732]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.37:068][747]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.42:069][762]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.47:069][777]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.52:072][ 79]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.04.57:073][551]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.02:078][  8]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.05:821][295]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.05:821][295]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.05:821][295]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.07:083][396]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.08:907][544]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.08:907][544]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.08:907][544]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.10:298][656]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.10:298][656]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.10:298][656]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.12:087][766]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.14:990][999]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.14:990][999]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.14:990][999]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.15:009][999]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.15:009][999]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.15:009][999]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.17:223][103]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.22:227][419]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.24:303][597]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.24:303][597]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.24:303][597]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.27:236][821]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.29:625][ 23]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.29:625][ 23]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.29:625][ 23]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.29:644][ 23]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.29:644][ 23]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.29:644][ 23]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.29:687][ 24]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.29:687][ 24]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.29:687][ 24]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.31:295][157]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.31:295][157]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.31:295][157]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.32:243][233]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.32:324][240]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.32:324][240]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.32:324][240]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.33:942][362]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.33:942][362]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.33:942][362]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.37:510][471]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.41:005][623]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.41:005][623]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.41:005][623]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.42:519][722]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.45:985][986]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.45:985][986]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.45:986][986]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.46:007][986]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.46:007][986]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.46:007][986]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.47:524][107]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.50:195][331]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.50:195][331]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.50:195][331]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.52:467][517]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.52:467][517]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.52:467][517]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.52:525][520]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.57:628][594]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.05.57:981][595]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.57:981][595]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.05.57:981][595]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.02:639][987]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.07:926][142]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.12:926][157]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.17:926][172]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.22:926][187]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.27:927][202]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.30:005][208]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2026.08.08-17.06.30:009][208]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.30:009][208]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.30:009][208]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.30:015][208]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.30:015][208]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.30:015][208]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.32:991][272]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.37:722][435]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.37:722][435]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.37:722][435]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.06.38:002][453]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.43:002][864]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.48:011][282]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.53:011][689]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.06.58:030][834]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.03:032][229]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.03:241][245]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.03:241][245]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.03:241][245]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.04:903][355]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.04:903][355]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.04:903][355]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.08:043][442]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.09:476][551]LogDerivedDataCache: C:/Users/Sergey/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.000 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 0 files in 1 folders with total size 0 MiB.
+[2026.08.08-17.07.10:473][621]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.10:473][621]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.10:473][621]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.12:143][738]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2026.08.08-17.07.12:146][738]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.12:146][738]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.12:146][738]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.12:154][738]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.12:154][738]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.12:154][738]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.13:288][766]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.18:289][781]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.23:293][107]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.28:306][266]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.33:311][373]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.38:312][576]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.43:320][887]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.43:986][939]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.07.43:986][939]LogWorld: BeginTearingDown for /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.07.43:986][939]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.08.08-17.07.43:987][939]LogWorld: UWorld::CleanupWorld for Lvl_ThirdPerson, bSessionEnded=true, bCleanupResources=true
+[2026.08.08-17.07.43:988][939]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.07.43:988][939]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson
+[2026.08.08-17.07.43:990][939]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.08.08-17.07.43:997][939]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.07.44:021][939]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.07.44:021][939]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 15
+[2026.08.08-17.07.44:021][939]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=15, StreamState=4
+[2026.08.08-17.07.44:024][939]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=15, StreamState=2
+[2026.08.08-17.07.44:035][939]LogUObjectHash: Compacting FUObjectHashTables data took   1.50ms
+[2026.08.08-17.07.44:108][940]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2026.08.08-17.07.44:716][996]LogContentBundle: [Lvl_ThirdPerson(Editor)] Generating Streaming for 0 Content Bundles.
+[2026.08.08-17.07.44:716][996]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' started...
+[2026.08.08-17.07.44:716][996]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' took 766 us (total: 59.428 ms)
+[2026.08.08-17.07.44:716][996]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.08.08-17.07.44:756][996]LogPlayLevel: Creating play world package: /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.07.44:763][996]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE started...
+[2026.08.08-17.07.44:763][996]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE took 1.005 ms (total: 16.308 ms)
+[2026.08.08-17.07.44:764][996]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007763s)
+[2026.08.08-17.07.44:764][996]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Lvl_ThirdPerson.Lvl_ThirdPerson to /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson (0.007836s)
+[2026.08.08-17.07.44:787][996]LogUObjectHash: Compacting FUObjectHashTables data took   1.67ms
+[2026.08.08-17.07.44:789][996]LogChaosDD: Creating Chaos Debug Draw Scene for world Lvl_ThirdPerson
+[2026.08.08-17.07.44:792][996]LogWorldPartition: ULevel::OnLevelLoaded(Lvl_ThirdPerson)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2026.08.08-17.07.44:792][996]LogWorldPartition: Display: WorldPartition initialize started...
+[2026.08.08-17.07.44:792][996]LogWorldPartition: UWorldPartition::Initialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2026.08.08-17.07.44:792][996]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2026.08.08-17.07.44:793][996]LogWorldPartition: Display: WorldPartition initialize took 1.377 ms (total: 369.192 ms)
+[2026.08.08-17.07.44:794][996]LogPlayLevel: PIE: World Init took: (0.003583s)
+[2026.08.08-17.07.44:794][996]LogAudio: Display: Creating Audio Device:                 Id: 16, Scope: Unique, Realtime: True
+[2026.08.08-17.07.44:794][996]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.08.08-17.07.44:794][996]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.08.08-17.07.44:794][996]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.08.08-17.07.44:794][996]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.08.08-17.07.44:794][996]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.08.08-17.07.44:794][996]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.08.08-17.07.44:794][996]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.08.08-17.07.44:794][996]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.08.08-17.07.44:794][996]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.08.08-17.07.44:794][996]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.08.08-17.07.44:794][996]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.08.08-17.07.44:796][996]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.08.08-17.07.44:820][996]LogAudioMixer: Display: Using Audio Hardware Device Динамики (Realtek(R) Audio)
+[2026.08.08-17.07.44:820][996]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.08.08-17.07.44:820][996]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.08.08-17.07.44:820][996]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.08.08-17.07.44:821][996]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=16
+[2026.08.08-17.07.44:821][996]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=16
+[2026.08.08-17.07.44:824][996]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=16
+[2026.08.08-17.07.44:824][996]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=16
+[2026.08.08-17.07.44:824][996]LogInit: FAudioDevice initialized with ID 16.
+[2026.08.08-17.07.44:824][996]LogAudio: Display: Audio Device (ID: 16) registered with world 'Lvl_ThirdPerson'.
+[2026.08.08-17.07.44:824][996]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 16
+[2026.08.08-17.07.44:828][996]LogLoad: Game class is 'BP_ThirdPersonGameMode_C'
+[2026.08.08-17.07.44:831][996]LogWorld: Bringing World /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson up for play (max tick rate 0) at 2026.08.08-20.07.44
+[2026.08.08-17.07.44:831][996]LogWorld: Bringing up level for play took: 0.003289
+[2026.08.08-17.07.44:833][996]LogOnline: OSS: Created online subsystem instance for: :Context_24
+[2026.08.08-17.07.44:835][996]PIE: Server logged in
+[2026.08.08-17.07.44:837][996]PIE: Play in editor total start time 0.122 seconds.
+[2026.08.08-17.07.44:895][996]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 512
+[2026.08.08-17.07.49:696][326]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.54:713][684]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.07.58:270][883]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 90293.257812
+[2026.08.08-17.07.58:478][894]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.08.08-17.07.58:478][894]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 90293.429688, Update Interval: 321.087067
+[2026.08.08-17.07.59:166][929]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2026.08.08-17.07.59:169][929]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.59:169][929]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.59:169][929]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.59:179][929]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.59:179][929]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.59:179][929]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.07.59:723][959]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.01:376][ 62]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.08.01:376][ 62]LogWorld: BeginTearingDown for /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.08.01:376][ 62]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.08.08-17.08.01:377][ 62]LogWorld: UWorld::CleanupWorld for Lvl_ThirdPerson, bSessionEnded=true, bCleanupResources=true
+[2026.08.08-17.08.01:378][ 62]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.08.01:378][ 62]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson
+[2026.08.08-17.08.01:379][ 62]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.08.08-17.08.01:382][ 62]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.08.01:405][ 62]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.08.01:406][ 62]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 16
+[2026.08.08-17.08.01:406][ 62]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16, StreamState=4
+[2026.08.08-17.08.01:408][ 62]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16, StreamState=2
+[2026.08.08-17.08.01:416][ 62]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2026.08.08-17.08.01:488][ 63]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2026.08.08-17.08.02:958][203]LogContentBundle: [Lvl_ThirdPerson(Editor)] Generating Streaming for 0 Content Bundles.
+[2026.08.08-17.08.02:958][203]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' started...
+[2026.08.08-17.08.02:959][203]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' took 824 us (total: 60.253 ms)
+[2026.08.08-17.08.02:959][203]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.08.08-17.08.02:959][203]LogPlayLevel: Creating play world package: /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.08.02:967][203]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE started...
+[2026.08.08-17.08.02:968][203]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE took 1.019 ms (total: 17.327 ms)
+[2026.08.08-17.08.02:968][203]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008445s)
+[2026.08.08-17.08.02:968][203]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Lvl_ThirdPerson.Lvl_ThirdPerson to /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson (0.008474s)
+[2026.08.08-17.08.02:991][203]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2026.08.08-17.08.02:993][203]LogChaosDD: Creating Chaos Debug Draw Scene for world Lvl_ThirdPerson
+[2026.08.08-17.08.02:995][203]LogWorldPartition: ULevel::OnLevelLoaded(Lvl_ThirdPerson)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2026.08.08-17.08.02:995][203]LogWorldPartition: Display: WorldPartition initialize started...
+[2026.08.08-17.08.02:995][203]LogWorldPartition: UWorldPartition::Initialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2026.08.08-17.08.02:995][203]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2026.08.08-17.08.02:996][203]LogWorldPartition: Display: WorldPartition initialize took 1.267 ms (total: 370.460 ms)
+[2026.08.08-17.08.02:996][203]LogPlayLevel: PIE: World Init took: (0.002864s)
+[2026.08.08-17.08.02:996][203]LogAudio: Display: Creating Audio Device:                 Id: 17, Scope: Unique, Realtime: True
+[2026.08.08-17.08.02:996][203]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.08.08-17.08.02:997][203]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.08.08-17.08.02:997][203]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.08.08-17.08.02:997][203]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.08.08-17.08.02:997][203]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.08.08-17.08.02:997][203]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.08.08-17.08.02:997][203]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.08.08-17.08.02:997][203]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.08.08-17.08.02:997][203]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.08.08-17.08.02:997][203]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.08.08-17.08.02:997][203]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.08.08-17.08.02:999][203]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.08.08-17.08.03:022][203]LogAudioMixer: Display: Using Audio Hardware Device Динамики (Realtek(R) Audio)
+[2026.08.08-17.08.03:022][203]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.08.08-17.08.03:022][203]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.08.08-17.08.03:022][203]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.08.08-17.08.03:023][203]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=17
+[2026.08.08-17.08.03:023][203]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=17
+[2026.08.08-17.08.03:026][203]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=17
+[2026.08.08-17.08.03:026][203]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=17
+[2026.08.08-17.08.03:026][203]LogInit: FAudioDevice initialized with ID 17.
+[2026.08.08-17.08.03:026][203]LogAudio: Display: Audio Device (ID: 17) registered with world 'Lvl_ThirdPerson'.
+[2026.08.08-17.08.03:026][203]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 17
+[2026.08.08-17.08.03:029][203]LogLoad: Game class is 'BP_ThirdPersonGameMode_C'
+[2026.08.08-17.08.03:032][203]LogWorld: Bringing World /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson up for play (max tick rate 0) at 2026.08.08-20.08.03
+[2026.08.08-17.08.03:032][203]LogWorld: Bringing up level for play took: 0.003151
+[2026.08.08-17.08.03:035][203]LogOnline: OSS: Created online subsystem instance for: :Context_25
+[2026.08.08-17.08.03:036][203]PIE: Server logged in
+[2026.08.08-17.08.03:039][203]PIE: Play in editor total start time 0.08 seconds.
+[2026.08.08-17.08.03:095][203]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 512
+[2026.08.08-17.08.07:947][590]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.12:956][ 55]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.17:960][498]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.22:972][903]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.27:979][370]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.32:985][821]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.37:993][224]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.43:001][627]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.48:291][811]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.53:293][ 76]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.08.58:295][428]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.01:448][651]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.01:448][651]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.01:448][651]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.03:307][782]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.03:479][794]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.03:479][794]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.03:479][794]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.04:846][886]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.04:846][886]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.04:846][886]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.05:613][939]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.05:613][939]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.05:613][939]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.08:313][139]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.12:242][380]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.12:242][380]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.12:242][380]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.12:267][380]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.12:267][380]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.12:267][380]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.13:322][451]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.16:652][681]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.16:653][681]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.16:653][681]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.18:337][768]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.19:361][835]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.19:361][835]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.19:361][835]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.19:388][835]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.19:388][835]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.19:388][835]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.19:394][835]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.19:394][835]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.19:394][835]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.20:776][917]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.20:776][917]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.20:776][917]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.22:992][ 60]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.22:992][ 60]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.22:992][ 60]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.23:338][ 81]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.24:506][157]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.24:506][157]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.24:506][157]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.28:348][409]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.33:360][748]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.35:929][929]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.35:929][929]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.35:929][929]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.37:767][ 51]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.37:767][ 51]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.37:767][ 51]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.38:365][ 89]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.38:474][ 95]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.38:474][ 95]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.38:474][ 95]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.43:372][411]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.47:167][661]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.47:167][661]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.47:167][661]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.47:193][661]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.47:193][661]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.47:193][661]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.47:199][661]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.47:199][661]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.47:199][661]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.48:375][744]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.53:120][837]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.53:120][837]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.53:120][837]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.53:390][845]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.09.53:686][864]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.53:686][864]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.53:686][864]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.56:370][ 44]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.56:370][ 44]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.56:370][ 44]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.09.58:603][108]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.03:608][341]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.06:544][541]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.06:544][541]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.06:544][541]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.07:470][599]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.07:470][599]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.07:470][599]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.08:423][662]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.08:423][662]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.08:423][662]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.08:611][673]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.09:421][725]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.09:421][725]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.09:421][725]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.10:984][830]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.10:984][830]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.10:984][830]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.13:618][979]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.14:035][  4]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.14:035][  4]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.14:035][  4]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.14:062][  4]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.14:062][  4]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.14:062][  4]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.14:106][  5]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.14:106][  5]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.14:106][  5]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.10.18:623][319]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.23:636][651]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.28:649][950]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.33:658][254]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.38:673][574]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.43:681][883]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.48:683][187]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.53:693][544]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.10.58:704][839]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.03:720][131]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.08:736][425]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.13:736][719]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.18:753][ 12]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.23:756][306]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.28:773][600]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.33:788][893]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.38:801][186]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.43:801][476]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.48:986][553]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.53:991][724]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.11.58:994][ 45]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.00:793][172]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.00:793][172]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.00:793][172]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.03:997][386]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.08:997][702]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.09:983][763]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.09:983][763]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.09:983][763]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.10:010][763]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.10:010][763]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.10:010][763]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.10:017][763]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.10:017][763]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.10:017][763]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.11:875][880]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.11:875][880]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.11:875][880]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.14:003][ 20]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.18:828][333]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.18:828][333]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.18:828][333]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.19:017][344]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.24:032][669]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.24:701][708]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.24:701][708]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.24:701][708]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.26:321][812]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.26:321][812]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.26:321][812]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.29:040][990]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.29:911][ 37]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.29:911][ 37]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.29:911][ 37]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.32:040][167]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2026.08.08-17.12.32:044][167]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.32:044][167]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.32:044][167]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.32:053][167]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.32:053][167]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.32:053][167]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.32:545][193]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.08.08-17.12.32:545][193]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try] ([2] browsable assets)...
+[2026.08.08-17.12.32:558][193]OBJ SavePackage:     Rendered thumbnail for [ControlRigBlueprint /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.CR_Beh_Anim_Try]
+[2026.08.08-17.12.32:558][193]OBJ SavePackage: Finished generating thumbnails for package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try]
+[2026.08.08-17.12.32:558][193]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try" FILE="D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset" SILENT=true
+[2026.08.08-17.12.32:673][193]LogSavePackage: Moving output files for package: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try
+[2026.08.08-17.12.32:673][193]LogSavePackage: Moving 'D:/Unreaall/Detectsystemp/Saved/CR_Beh_Anim_TryC102479742F06DD34D7FD1AF77A073D6.tmp' to 'D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset'
+[2026.08.08-17.12.32:696][193]LogFileHelpers: InternalPromptForCheckoutAndSave took 150.989 ms (total: 1.86 sec)
+[2026.08.08-17.12.32:738][193]LogContentValidation: Display: Starting to validate 1 assets
+[2026.08.08-17.12.32:738][193]LogContentValidation: Enabled validators:
+[2026.08.08-17.12.32:738][193]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.08.08-17.12.32:738][193]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.08.08-17.12.32:738][193]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.08.08-17.12.32:738][193]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.08.08-17.12.32:738][193]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.08.08-17.12.32:738][193]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.08.08-17.12.32:738][193]AssetCheck: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try Validating asset
+[2026.08.08-17.12.34:047][266]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.39:049][631]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.44:052][970]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.48:969][279]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.48:969][279]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.48:969][279]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.49:053][281]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.50:953][392]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2026.08.08-17.12.50:957][392]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.50:957][392]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.50:957][392]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.50:966][392]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.50:966][392]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.50:966][392]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.12.51:425][417]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.08.08-17.12.51:425][417]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try] ([2] browsable assets)...
+[2026.08.08-17.12.51:434][417]OBJ SavePackage:     Rendered thumbnail for [ControlRigBlueprint /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.CR_Beh_Anim_Try]
+[2026.08.08-17.12.51:435][417]OBJ SavePackage: Finished generating thumbnails for package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try]
+[2026.08.08-17.12.51:435][417]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try" FILE="D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset" SILENT=true
+[2026.08.08-17.12.51:549][417]LogSavePackage: Moving output files for package: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try
+[2026.08.08-17.12.51:549][417]LogSavePackage: Moving 'D:/Unreaall/Detectsystemp/Saved/CR_Beh_Anim_Try404DE2A94B47A8EACDEF418276ED55BF.tmp' to 'D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset'
+[2026.08.08-17.12.51:572][417]LogFileHelpers: InternalPromptForCheckoutAndSave took 146.933 ms (total: 2.00 sec)
+[2026.08.08-17.12.51:612][417]LogContentValidation: Display: Starting to validate 1 assets
+[2026.08.08-17.12.51:612][417]LogContentValidation: Enabled validators:
+[2026.08.08-17.12.51:612][417]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.08.08-17.12.51:612][417]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.08.08-17.12.51:612][417]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.08.08-17.12.51:612][417]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.08.08-17.12.51:612][417]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.08.08-17.12.51:612][417]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.08.08-17.12.51:612][417]AssetCheck: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try Validating asset
+[2026.08.08-17.12.54:061][546]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.12.54:247][558]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.12.54:247][558]LogWorld: BeginTearingDown for /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.12.54:247][558]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.08.08-17.12.54:248][558]LogWorld: UWorld::CleanupWorld for Lvl_ThirdPerson, bSessionEnded=true, bCleanupResources=true
+[2026.08.08-17.12.54:249][558]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.12.54:249][558]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson
+[2026.08.08-17.12.54:250][558]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.08.08-17.12.54:254][558]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.12.54:275][558]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.12.54:276][558]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 17
+[2026.08.08-17.12.54:276][558]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17, StreamState=4
+[2026.08.08-17.12.54:278][558]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17, StreamState=2
+[2026.08.08-17.12.54:288][558]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2026.08.08-17.12.54:358][559]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2026.08.08-17.12.55:769][692]LogContentBundle: [Lvl_ThirdPerson(Editor)] Generating Streaming for 0 Content Bundles.
+[2026.08.08-17.12.55:769][692]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' started...
+[2026.08.08-17.12.55:769][692]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' took 633 us (total: 60.887 ms)
+[2026.08.08-17.12.55:770][692]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.08.08-17.12.55:796][692]LogPlayLevel: Creating play world package: /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.12.55:801][692]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE started...
+[2026.08.08-17.12.55:802][692]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE took 1.041 ms (total: 18.369 ms)
+[2026.08.08-17.12.55:802][692]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006473s)
+[2026.08.08-17.12.55:802][692]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Lvl_ThirdPerson.Lvl_ThirdPerson to /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson (0.006518s)
+[2026.08.08-17.12.55:826][692]LogUObjectHash: Compacting FUObjectHashTables data took   1.61ms
+[2026.08.08-17.12.55:828][692]LogChaosDD: Creating Chaos Debug Draw Scene for world Lvl_ThirdPerson
+[2026.08.08-17.12.55:829][692]LogWorldPartition: ULevel::OnLevelLoaded(Lvl_ThirdPerson)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2026.08.08-17.12.55:830][692]LogWorldPartition: Display: WorldPartition initialize started...
+[2026.08.08-17.12.55:830][692]LogWorldPartition: UWorldPartition::Initialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2026.08.08-17.12.55:830][692]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2026.08.08-17.12.55:830][692]LogWorldPartition: Display: WorldPartition initialize took 1.362 ms (total: 371.823 ms)
+[2026.08.08-17.12.55:830][692]LogPlayLevel: PIE: World Init took: (0.003279s)
+[2026.08.08-17.12.55:831][692]LogAudio: Display: Creating Audio Device:                 Id: 18, Scope: Unique, Realtime: True
+[2026.08.08-17.12.55:831][692]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.08.08-17.12.55:831][692]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.08.08-17.12.55:831][692]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.08.08-17.12.55:831][692]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.08.08-17.12.55:831][692]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.08.08-17.12.55:831][692]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.08.08-17.12.55:831][692]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.08.08-17.12.55:831][692]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.08.08-17.12.55:831][692]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.08.08-17.12.55:831][692]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.08.08-17.12.55:831][692]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.08.08-17.12.55:834][692]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.08.08-17.12.55:858][692]LogAudioMixer: Display: Using Audio Hardware Device Динамики (Realtek(R) Audio)
+[2026.08.08-17.12.55:858][692]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.08.08-17.12.55:858][692]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.08.08-17.12.55:858][692]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.08.08-17.12.55:860][692]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=18
+[2026.08.08-17.12.55:860][692]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=18
+[2026.08.08-17.12.55:861][692]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=18
+[2026.08.08-17.12.55:861][692]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=18
+[2026.08.08-17.12.55:861][692]LogInit: FAudioDevice initialized with ID 18.
+[2026.08.08-17.12.55:861][692]LogAudio: Display: Audio Device (ID: 18) registered with world 'Lvl_ThirdPerson'.
+[2026.08.08-17.12.55:861][692]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 18
+[2026.08.08-17.12.55:865][692]LogLoad: Game class is 'BP_ThirdPersonGameMode_C'
+[2026.08.08-17.12.55:868][692]LogWorld: Bringing World /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson up for play (max tick rate 0) at 2026.08.08-20.12.55
+[2026.08.08-17.12.55:869][692]LogWorld: Bringing up level for play took: 0.003547
+[2026.08.08-17.12.55:871][692]LogOnline: OSS: Created online subsystem instance for: :Context_26
+[2026.08.08-17.12.55:873][692]PIE: Server logged in
+[2026.08.08-17.12.55:875][692]PIE: Play in editor total start time 0.106 seconds.
+[2026.08.08-17.12.55:932][692]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 512
+[2026.08.08-17.13.00:756][ 82]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.05:760][529]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.10:926][557]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.15:927][572]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.20:927][587]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.25:928][602]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.30:929][  3]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.35:941][439]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.40:951][893]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.45:961][360]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.50:987][802]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.13.55:993][198]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.01:000][652]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.06:003][108]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.11:011][567]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.13:981][837]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 90662.140625
+[2026.08.08-17.14.14:168][854]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.08.08-17.14.14:168][854]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 90662.289062, Update Interval: 357.046417
+[2026.08.08-17.14.16:013][ 25]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.21:022][486]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.26:026][940]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.31:028][395]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.36:030][851]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.41:035][317]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.46:043][776]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.51:056][232]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.14.56:059][690]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.01:061][146]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.06:071][606]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.11:076][ 59]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.16:094][479]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.21:099][876]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.26:365][278]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.31:365][293]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.36:366][308]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.41:367][323]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.46:368][338]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.51:368][353]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.15.56:368][368]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.01:369][383]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.06:370][398]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.11:370][413]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.16:395][462]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.21:399][919]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.26:408][311]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.31:416][778]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.36:440][253]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.41:442][654]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.46:451][ 81]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.51:461][518]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.16.56:479][893]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.01:480][174]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.06:490][465]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.11:503][851]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.16:506][242]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.21:510][653]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.26:512][ 77]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.30:106][377]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.30:106][377]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.30:106][377]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.31:519][501]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.36:520][945]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.38:674][130]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.38:674][130]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.38:674][130]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.40:532][285]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.40:532][285]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.40:532][285]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.41:525][365]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.46:528][776]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.48:081][897]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.48:081][897]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.48:081][897]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.49:676][ 20]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.49:676][ 20]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.49:676][ 20]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.51:528][144]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.54:065][356]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.54:065][356]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.54:065][356]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.54:098][356]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.54:098][356]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.54:098][356]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.56:155][519]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.08.08-17.17.56:156][519]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try] ([2] browsable assets)...
+[2026.08.08-17.17.56:167][519]OBJ SavePackage:     Rendered thumbnail for [ControlRigBlueprint /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.CR_Beh_Anim_Try]
+[2026.08.08-17.17.56:167][519]OBJ SavePackage: Finished generating thumbnails for package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try]
+[2026.08.08-17.17.56:167][519]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try" FILE="D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset" SILENT=true
+[2026.08.08-17.17.56:277][519]LogSavePackage: Moving output files for package: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try
+[2026.08.08-17.17.56:277][519]LogSavePackage: Moving 'D:/Unreaall/Detectsystemp/Saved/CR_Beh_Anim_TryB4050575400388B849407F9ADD23F39F.tmp' to 'D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset'
+[2026.08.08-17.17.56:300][519]LogFileHelpers: InternalPromptForCheckoutAndSave took 144.251 ms (total: 2.15 sec)
+[2026.08.08-17.17.56:343][519]LogContentValidation: Display: Starting to validate 1 assets
+[2026.08.08-17.17.56:343][519]LogContentValidation: Enabled validators:
+[2026.08.08-17.17.56:343][519]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.08.08-17.17.56:344][519]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.08.08-17.17.56:344][519]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.08.08-17.17.56:344][519]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.08.08-17.17.56:344][519]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.08.08-17.17.56:344][519]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.08.08-17.17.56:344][519]AssetCheck: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try Validating asset
+[2026.08.08-17.17.56:541][533]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.17.58:423][688]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.58:423][688]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.58:423][688]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.58:818][714]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.58:818][714]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.17.58:818][714]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.00:139][817]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.00:139][817]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.00:139][817]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.01:546][917]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.02:023][951]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.02:023][951]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.02:023][951]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.03:343][ 45]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.03:343][ 45]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.03:343][ 45]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.04:525][135]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.04:525][135]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.04:525][135]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.06:415][282]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.06:415][282]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.06:415][282]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.06:558][290]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.07:813][377]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.07:813][377]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.07:813][377]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.08:803][457]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.18.11:565][694]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.14:786][964]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.14:786][964]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.14:786][964]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.16:574][111]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.21:582][531]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.26:592][928]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.31:593][338]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.34:795][604]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.34:795][604]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.34:795][604]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.36:599][753]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.41:605][178]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.46:607][603]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.51:607][ 14]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.52:639][ 97]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.52:639][ 97]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.52:639][ 97]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.52:640][ 97]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.18.54:770][262]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.54:770][262]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.54:771][262]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.54:775][262]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.18.56:610][398]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.18.57:030][429]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.57:030][429]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.57:030][429]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.57:033][429]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.18.58:376][518]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.58:376][518]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.58:376][518]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.18.58:379][518]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.19.00:215][642]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.19.00:215][642]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.19.00:215][642]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.19.00:218][642]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.19.01:616][752]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.02:247][791]LogUObjectHash: Compacting FUObjectHashTables data took   1.63ms
+[2026.08.08-17.19.02:252][791]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.19.02:252][791]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.19.02:252][791]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.19.02:259][791]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.19.02:259][791]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.19.02:259][791]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.19.03:181][854]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.19.06:627][ 77]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.11:640][498]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.16:653][881]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.21:665][315]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.26:668][699]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.31:676][ 52]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.36:680][356]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.41:688][660]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.46:689][ 31]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.51:691][478]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.19.56:693][823]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.01:705][198]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.06:709][559]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.11:713][935]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.13:427][ 66]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.20.13:427][ 66]LogWorld: BeginTearingDown for /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.20.13:427][ 66]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.08.08-17.20.13:427][ 66]LogWorld: UWorld::CleanupWorld for Lvl_ThirdPerson, bSessionEnded=true, bCleanupResources=true
+[2026.08.08-17.20.13:428][ 66]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.20.13:428][ 66]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson
+[2026.08.08-17.20.13:429][ 66]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.08.08-17.20.13:433][ 66]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.20.13:457][ 66]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.20.13:457][ 66]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 18
+[2026.08.08-17.20.13:457][ 66]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18, StreamState=4
+[2026.08.08-17.20.13:461][ 66]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18, StreamState=2
+[2026.08.08-17.20.13:469][ 66]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2026.08.08-17.20.13:540][ 67]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2026.08.08-17.20.14:061][114]LogContentBundle: [Lvl_ThirdPerson(Editor)] Generating Streaming for 0 Content Bundles.
+[2026.08.08-17.20.14:061][114]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' started...
+[2026.08.08-17.20.14:062][114]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' took 572 us (total: 61.460 ms)
+[2026.08.08-17.20.14:062][114]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.08.08-17.20.14:096][114]LogPlayLevel: Creating play world package: /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.20.14:101][114]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE started...
+[2026.08.08-17.20.14:101][114]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE took 965 us (total: 19.334 ms)
+[2026.08.08-17.20.14:101][114]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006334s)
+[2026.08.08-17.20.14:101][114]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Lvl_ThirdPerson.Lvl_ThirdPerson to /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson (0.006388s)
+[2026.08.08-17.20.14:128][114]LogUObjectHash: Compacting FUObjectHashTables data took   1.70ms
+[2026.08.08-17.20.14:130][114]LogChaosDD: Creating Chaos Debug Draw Scene for world Lvl_ThirdPerson
+[2026.08.08-17.20.14:131][114]LogWorldPartition: ULevel::OnLevelLoaded(Lvl_ThirdPerson)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2026.08.08-17.20.14:131][114]LogWorldPartition: Display: WorldPartition initialize started...
+[2026.08.08-17.20.14:131][114]LogWorldPartition: UWorldPartition::Initialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2026.08.08-17.20.14:131][114]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2026.08.08-17.20.14:132][114]LogWorldPartition: Display: WorldPartition initialize took 1.305 ms (total: 373.129 ms)
+[2026.08.08-17.20.14:133][114]LogPlayLevel: PIE: World Init took: (0.003118s)
+[2026.08.08-17.20.14:133][114]LogAudio: Display: Creating Audio Device:                 Id: 19, Scope: Unique, Realtime: True
+[2026.08.08-17.20.14:133][114]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.08.08-17.20.14:133][114]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.08.08-17.20.14:133][114]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.08.08-17.20.14:133][114]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.08.08-17.20.14:133][114]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.08.08-17.20.14:133][114]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.08.08-17.20.14:133][114]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.08.08-17.20.14:133][114]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.08.08-17.20.14:133][114]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.08.08-17.20.14:133][114]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.08.08-17.20.14:133][114]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.08.08-17.20.14:136][114]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.08.08-17.20.14:161][114]LogAudioMixer: Display: Using Audio Hardware Device Динамики (Realtek(R) Audio)
+[2026.08.08-17.20.14:161][114]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.08.08-17.20.14:161][114]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.08.08-17.20.14:161][114]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.08.08-17.20.14:161][114]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=19
+[2026.08.08-17.20.14:161][114]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=19
+[2026.08.08-17.20.14:163][114]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=19
+[2026.08.08-17.20.14:163][114]LogInit: FAudioDevice initialized with ID 19.
+[2026.08.08-17.20.14:163][114]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=19
+[2026.08.08-17.20.14:163][114]LogAudio: Display: Audio Device (ID: 19) registered with world 'Lvl_ThirdPerson'.
+[2026.08.08-17.20.14:163][114]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 19
+[2026.08.08-17.20.14:167][114]LogLoad: Game class is 'BP_ThirdPersonGameMode_C'
+[2026.08.08-17.20.14:171][114]LogWorld: Bringing World /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson up for play (max tick rate 0) at 2026.08.08-20.20.14
+[2026.08.08-17.20.14:172][114]LogWorld: Bringing up level for play took: 0.003499
+[2026.08.08-17.20.14:173][114]LogOnline: OSS: Created online subsystem instance for: :Context_27
+[2026.08.08-17.20.14:175][114]PIE: Server logged in
+[2026.08.08-17.20.14:178][114]PIE: Play in editor total start time 0.116 seconds.
+[2026.08.08-17.20.14:237][114]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 512
+[2026.08.08-17.20.19:050][468]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.24:050][926]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.29:050][306]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.34:062][717]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.39:073][ 96]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.41:249][261]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 91035.406250
+[2026.08.08-17.20.41:450][276]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.08.08-17.20.41:450][276]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 91035.625000, Update Interval: 308.675812
+[2026.08.08-17.20.44:089][460]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.49:102][769]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.54:115][ 81]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.20.59:120][458]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.03:431][768]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.03:431][768]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.03:431][768]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.04:133][820]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.09:137][200]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.14:141][560]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.19:150][923]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.24:160][258]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.29:172][617]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.34:179][959]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.37:539][190]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.37:539][190]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.37:539][190]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.37:540][190]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.21.39:128][301]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.39:128][301]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.39:128][301]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.39:129][301]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.21.39:183][303]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.44:183][643]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.45:638][736]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2026.08.08-17.21.45:642][736]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.45:643][736]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.45:643][736]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.45:650][736]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.45:650][736]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.45:650][736]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.21.49:189][990]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.54:189][414]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.21.54:897][471]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.21.54:897][471]LogWorld: BeginTearingDown for /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.21.54:897][471]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.08.08-17.21.54:898][471]LogWorld: UWorld::CleanupWorld for Lvl_ThirdPerson, bSessionEnded=true, bCleanupResources=true
+[2026.08.08-17.21.54:899][471]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.21.54:899][471]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson
+[2026.08.08-17.21.54:900][471]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.08.08-17.21.54:905][471]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.21.54:927][471]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.21.54:927][471]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 19
+[2026.08.08-17.21.54:927][471]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19, StreamState=4
+[2026.08.08-17.21.54:931][471]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=19, StreamState=2
+[2026.08.08-17.21.54:939][471]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2026.08.08-17.21.55:013][472]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2026.08.08-17.21.56:488][605]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.22.02:323][ 81]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.22.10:431][834]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.22.13:522][ 95]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.22.15:913][310]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.22.18:919][569]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.22.22:407][843]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.22.24:717][ 40]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.22.26:462][177]LogRigVM: Warning: Instruction[78] 'FRigVMFunction_MathVectorClampLength::Execute': 'Value is nearly zero'
+[2026.08.08-17.22.27:872][295]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2026.08.08-17.22.28:306][321]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.08.08-17.22.28:361][321]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try] ([2] browsable assets)...
+[2026.08.08-17.22.28:373][321]OBJ SavePackage:     Rendered thumbnail for [ControlRigBlueprint /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.CR_Beh_Anim_Try]
+[2026.08.08-17.22.28:373][321]OBJ SavePackage: Finished generating thumbnails for package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try]
+[2026.08.08-17.22.28:373][321]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try" FILE="D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset" SILENT=true
+[2026.08.08-17.22.28:486][321]LogSavePackage: Moving output files for package: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try
+[2026.08.08-17.22.28:486][321]LogSavePackage: Moving 'D:/Unreaall/Detectsystemp/Saved/CR_Beh_Anim_Try2DE331824599220F4E8A1CAE301136B7.tmp' to 'D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset'
+[2026.08.08-17.22.28:517][321]LogFileHelpers: InternalPromptForCheckoutAndSave took 211.144 ms (total: 2.36 sec)
+[2026.08.08-17.22.28:609][321]LogContentValidation: Display: Starting to validate 1 assets
+[2026.08.08-17.22.28:609][321]LogContentValidation: Enabled validators:
+[2026.08.08-17.22.28:609][321]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.08.08-17.22.28:609][321]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.08.08-17.22.28:609][321]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.08.08-17.22.28:609][321]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.08.08-17.22.28:609][321]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.08.08-17.22.28:609][321]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.08.08-17.22.28:609][321]AssetCheck: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try Validating asset
+[2026.08.08-17.22.32:343][651]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.08.08-17.22.32:351][651]LogContentBundle: [Lvl_ThirdPerson(Editor)] Generating Streaming for 0 Content Bundles.
+[2026.08.08-17.22.32:351][651]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' started...
+[2026.08.08-17.22.32:352][651]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' took 590 us (total: 62.050 ms)
+[2026.08.08-17.22.32:352][651]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.08.08-17.22.32:376][651]LogPlayLevel: Creating play world package: /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.22.32:381][651]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE started...
+[2026.08.08-17.22.32:382][651]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE took 1.136 ms (total: 20.470 ms)
+[2026.08.08-17.22.32:382][651]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007024s)
+[2026.08.08-17.22.32:383][651]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Lvl_ThirdPerson.Lvl_ThirdPerson to /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson (0.007073s)
+[2026.08.08-17.22.32:407][651]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2026.08.08-17.22.32:408][651]LogChaosDD: Creating Chaos Debug Draw Scene for world Lvl_ThirdPerson
+[2026.08.08-17.22.32:410][651]LogWorldPartition: ULevel::OnLevelLoaded(Lvl_ThirdPerson)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2026.08.08-17.22.32:410][651]LogWorldPartition: Display: WorldPartition initialize started...
+[2026.08.08-17.22.32:410][651]LogWorldPartition: UWorldPartition::Initialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2026.08.08-17.22.32:410][651]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2026.08.08-17.22.32:411][651]LogWorldPartition: Display: WorldPartition initialize took 1.286 ms (total: 374.415 ms)
+[2026.08.08-17.22.32:411][651]LogPlayLevel: PIE: World Init took: (0.002954s)
+[2026.08.08-17.22.32:412][651]LogAudio: Display: Creating Audio Device:                 Id: 20, Scope: Unique, Realtime: True
+[2026.08.08-17.22.32:412][651]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.08.08-17.22.32:412][651]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.08.08-17.22.32:412][651]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.08.08-17.22.32:412][651]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.08.08-17.22.32:412][651]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.08.08-17.22.32:412][651]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.08.08-17.22.32:412][651]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.08.08-17.22.32:412][651]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.08.08-17.22.32:412][651]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.08.08-17.22.32:412][651]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.08.08-17.22.32:412][651]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.08.08-17.22.32:415][651]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.08.08-17.22.32:439][651]LogAudioMixer: Display: Using Audio Hardware Device Динамики (Realtek(R) Audio)
+[2026.08.08-17.22.32:439][651]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.08.08-17.22.32:439][651]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.08.08-17.22.32:439][651]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.08.08-17.22.32:440][651]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=20
+[2026.08.08-17.22.32:440][651]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=20
+[2026.08.08-17.22.32:442][651]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=20
+[2026.08.08-17.22.32:442][651]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=20
+[2026.08.08-17.22.32:442][651]LogInit: FAudioDevice initialized with ID 20.
+[2026.08.08-17.22.32:442][651]LogAudio: Display: Audio Device (ID: 20) registered with world 'Lvl_ThirdPerson'.
+[2026.08.08-17.22.32:442][651]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 20
+[2026.08.08-17.22.32:446][651]LogLoad: Game class is 'BP_ThirdPersonGameMode_C'
+[2026.08.08-17.22.32:450][651]LogWorld: Bringing World /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson up for play (max tick rate 0) at 2026.08.08-20.22.32
+[2026.08.08-17.22.32:450][651]LogWorld: Bringing up level for play took: 0.004249
+[2026.08.08-17.22.32:453][651]LogOnline: OSS: Created online subsystem instance for: :Context_28
+[2026.08.08-17.22.32:573][651]PIE: Server logged in
+[2026.08.08-17.22.32:575][651]PIE: Play in editor total start time 0.224 seconds.
+[2026.08.08-17.22.32:645][652]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 512
+[2026.08.08-17.22.34:236][792]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.22.34:236][792]LogWorld: BeginTearingDown for /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.22.34:236][792]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.08.08-17.22.34:237][792]LogWorld: UWorld::CleanupWorld for Lvl_ThirdPerson, bSessionEnded=true, bCleanupResources=true
+[2026.08.08-17.22.34:237][792]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.22.34:237][792]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson
+[2026.08.08-17.22.34:241][792]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.08.08-17.22.34:245][792]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.22.34:271][792]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.08.08-17.22.34:271][792]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 20
+[2026.08.08-17.22.34:271][792]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20, StreamState=4
+[2026.08.08-17.22.34:273][792]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=20, StreamState=2
+[2026.08.08-17.22.34:276][792]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.22.34:279][792]LogUObjectHash: Compacting FUObjectHashTables data took   1.36ms
+[2026.08.08-17.22.34:347][793]LogPlayLevel: Display: Destroying online subsystem :Context_28
+[2026.08.08-17.22.34:751][830]LogContentBundle: [Lvl_ThirdPerson(Editor)] Generating Streaming for 0 Content Bundles.
+[2026.08.08-17.22.34:751][830]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' started...
+[2026.08.08-17.22.34:753][830]LogWorldPartition: Display: GenerateStreaming for 'Lvl_ThirdPerson' took 611 us (total: 62.661 ms)
+[2026.08.08-17.22.34:753][830]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.08.08-17.22.34:785][830]LogPlayLevel: Creating play world package: /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.22.34:791][830]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE started...
+[2026.08.08-17.22.34:792][830]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE took 951 us (total: 21.422 ms)
+[2026.08.08-17.22.34:792][830]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006135s)
+[2026.08.08-17.22.34:792][830]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Lvl_ThirdPerson.Lvl_ThirdPerson to /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson (0.006175s)
+[2026.08.08-17.22.34:816][830]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2026.08.08-17.22.34:817][830]LogChaosDD: Creating Chaos Debug Draw Scene for world Lvl_ThirdPerson
+[2026.08.08-17.22.34:819][830]LogWorldPartition: ULevel::OnLevelLoaded(Lvl_ThirdPerson)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2026.08.08-17.22.34:820][830]LogWorldPartition: Display: WorldPartition initialize started...
+[2026.08.08-17.22.34:820][830]LogWorldPartition: UWorldPartition::Initialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2026.08.08-17.22.34:820][830]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2026.08.08-17.22.34:821][830]LogWorldPartition: Display: WorldPartition initialize took 1.465 ms (total: 375.881 ms)
+[2026.08.08-17.22.34:821][830]LogPlayLevel: PIE: World Init took: (0.003457s)
+[2026.08.08-17.22.34:822][830]LogAudio: Display: Creating Audio Device:                 Id: 21, Scope: Unique, Realtime: True
+[2026.08.08-17.22.34:822][830]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.08.08-17.22.34:822][830]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.08.08-17.22.34:822][830]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.08.08-17.22.34:822][830]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.08.08-17.22.34:822][830]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.08.08-17.22.34:822][830]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.08.08-17.22.34:822][830]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.08.08-17.22.34:822][830]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.08.08-17.22.34:822][830]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.08.08-17.22.34:822][830]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.08.08-17.22.34:822][830]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.08.08-17.22.34:823][830]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.08.08-17.22.34:847][830]LogAudioMixer: Display: Using Audio Hardware Device Динамики (Realtek(R) Audio)
+[2026.08.08-17.22.34:847][830]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.08.08-17.22.34:847][830]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.08.08-17.22.34:847][830]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.08.08-17.22.34:848][830]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=21
+[2026.08.08-17.22.34:848][830]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=21
+[2026.08.08-17.22.34:851][830]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=21
+[2026.08.08-17.22.34:851][830]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=21
+[2026.08.08-17.22.34:851][830]LogInit: FAudioDevice initialized with ID 21.
+[2026.08.08-17.22.34:851][830]LogAudio: Display: Audio Device (ID: 21) registered with world 'Lvl_ThirdPerson'.
+[2026.08.08-17.22.34:851][830]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 21
+[2026.08.08-17.22.34:853][830]LogLoad: Game class is 'BP_ThirdPersonGameMode_C'
+[2026.08.08-17.22.34:857][830]LogWorld: Bringing World /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson up for play (max tick rate 0) at 2026.08.08-20.22.34
+[2026.08.08-17.22.34:858][830]LogWorld: Bringing up level for play took: 0.003190
+[2026.08.08-17.22.34:860][830]LogOnline: OSS: Created online subsystem instance for: :Context_29
+[2026.08.08-17.22.34:861][830]PIE: Server logged in
+[2026.08.08-17.22.34:863][830]PIE: Play in editor total start time 0.111 seconds.
+[2026.08.08-17.22.34:921][830]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 512
+[2026.08.08-17.22.39:742][202]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.22.44:751][593]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.22.49:752][927]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.22.54:758][241]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.22.58:611][488]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.22.58:611][488]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.22.58:611][488]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.22.59:765][557]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.22.59:940][563]LogUObjectHash: Compacting FUObjectHashTables data took   1.05ms
+[2026.08.08-17.22.59:943][563]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.22.59:943][563]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.22.59:943][563]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.22.59:953][563]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.22.59:953][563]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.22.59:953][563]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.23.04:780][870]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.09:796][187]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.14:840][498]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.19:841][784]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.24:845][ 92]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.29:855][408]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.34:857][687]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.39:860][ 19]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.44:873][354]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.49:880][723]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.52:235][900]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.23.52:235][900]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.23.52:235][900]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.23.54:882][ 86]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.23.57:978][303]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.23.57:978][303]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.23.57:978][303]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.23.59:897][431]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.04:899][733]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.07:031][868]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2026.08.08-17.24.07:036][868]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.24.07:036][868]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.24.07:036][868]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.24.07:044][868]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.24.07:044][868]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.24.07:044][868]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.24.09:903][ 22]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.14:909][486]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.19:917][945]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.24:925][416]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.29:948][837]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.34:963][149]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.39:970][501]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.44:996][849]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.49:999][242]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.24.55:195][454]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.00:205][688]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.05:209][ 65]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.10:218][467]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.15:223][895]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.20:228][320]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.25:231][656]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.30:238][  8]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.35:239][358]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.35:239][358]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.35:239][358]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.35:254][359]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.40:265][721]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.45:275][ 93]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.45:817][131]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.45:817][131]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.45:817][131]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.49:370][395]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.49:370][395]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.49:370][395]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.50:277][460]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.55:195][803]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.55:195][803]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.55:195][803]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.55:290][809]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.25.59:376][ 83]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.59:376][ 83]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.25.59:376][ 83]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.00:302][147]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.05:314][504]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.10:323][831]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.10:940][862]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2026.08.08-17.26.10:944][862]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.10:944][862]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.10:944][862]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.10:951][862]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.10:951][862]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.10:951][862]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.15:332][119]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.20:343][420]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.25:343][720]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.30:345][ 23]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.31:186][ 73]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 91388.273438
+[2026.08.08-17.26.31:404][ 86]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2026.08.08-17.26.31:404][ 86]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 91388.460938, Update Interval: 346.239197
+[2026.08.08-17.26.35:359][325]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.40:359][627]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.45:370][927]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.49:000][150]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.49:000][150]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.49:000][150]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.50:371][239]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.26.50:811][270]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.50:811][270]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.50:811][270]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.26.55:371][611]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.00:378][935]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.01:407][ 12]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.01:407][ 12]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.01:407][ 12]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.04:189][210]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.04:189][210]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.04:189][210]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.05:383][297]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.10:393][659]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.13:089][849]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.13:089][849]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.13:089][849]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.15:406][  0]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.20:408][317]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.25:414][625]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.30:415][926]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.35:420][282]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.38:556][492]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2026.08.08-17.27.38:559][492]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.38:559][492]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.38:559][492]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.38:566][492]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.38:566][492]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.38:566][492]LogUtils: Error: The Editor is currently in a play mode.
+[2026.08.08-17.27.40:433][600]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.45:437][  3]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.50:441][402]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.27.54:836][714]LogUObjectHash: Compacting FUObjectHashTables data took   1.47ms
+[2026.08.08-17.27.54:840][714]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.08.08-17.27.54:841][714]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try] ([2] browsable assets)...
+[2026.08.08-17.27.54:853][714]OBJ SavePackage:     Rendered thumbnail for [ControlRigBlueprint /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.CR_Beh_Anim_Try]
+[2026.08.08-17.27.54:853][714]OBJ SavePackage: Finished generating thumbnails for package [/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try]
+[2026.08.08-17.27.54:853][714]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try" FILE="D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset" SILENT=true
+[2026.08.08-17.27.54:965][714]LogSavePackage: Moving output files for package: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try
+[2026.08.08-17.27.54:965][714]LogSavePackage: Moving 'D:/Unreaall/Detectsystemp/Saved/CR_Beh_Anim_TryA5D328B74A17DA3C883C3EB7008457D4.tmp' to 'D:/Unreaall/Detectsystemp/Content/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try.uasset'
+[2026.08.08-17.27.54:988][714]LogFileHelpers: InternalPromptForCheckoutAndSave took 147.320 ms (total: 2.51 sec)
+[2026.08.08-17.27.54:992][714]LogContentValidation: Display: Starting to validate 1 assets
+[2026.08.08-17.27.54:992][714]LogContentValidation: Enabled validators:
+[2026.08.08-17.27.54:992][714]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.08.08-17.27.54:992][714]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.08.08-17.27.54:992][714]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.08.08-17.27.54:992][714]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.08.08-17.27.54:992][714]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.08.08-17.27.54:992][714]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.08.08-17.27.54:992][714]AssetCheck: /Game/Bluprient/New_Beh/Animation/CR_Beh_Anim_Try Validating asset
+[2026.08.08-17.27.55:455][746]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.00:468][110]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.05:475][473]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.10:489][841]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.15:497][208]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.20:506][574]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.25:521][935]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.30:534][265]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.35:536][559]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.40:542][851]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.45:555][139]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.50:560][421]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.28.55:566][702]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.29.00:580][976]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.29.05:590][326]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.29.10:596][679]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.29.15:597][ 26]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.29.20:922][ 64]LogBlueprintUserMessages: [BPC_Search_SYS] 3
