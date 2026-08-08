@@ -13039,3 +13039,21 @@ FPackageName: Skipped package /Game/PhysicMaterials/PM_Gravel has a valid, mount
 [2026.08.08-17.29.10:596][679]LogBlueprintUserMessages: [BPC_Search_SYS] 3
 [2026.08.08-17.29.15:597][ 26]LogBlueprintUserMessages: [BPC_Search_SYS] 3
 [2026.08.08-17.29.20:922][ 64]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.29.25:922][ 79]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.29.30:268][121]LogUObjectHash: Compacting FUObjectHashTables data took   1.68ms
+[2026.08.08-17.29.30:925][163]LogBlueprintUserMessages: [BPC_Search_SYS] 3
+[2026.08.08-17.29.35:437][263]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.29.35:437][263]LogWorld: BeginTearingDown for /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson
+[2026.08.08-17.29.35:437][263]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.08.08-17.29.35:438][263]LogWorld: UWorld::CleanupWorld for Lvl_ThirdPerson, bSessionEnded=true, bCleanupResources=true
+[2026.08.08-17.29.35:439][263]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.29.35:439][263]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ThirdPerson/UEDPIE_0_Lvl_ThirdPerson.Lvl_ThirdPerson
+[2026.08.08-17.29.35:440][263]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.08.08-17.29.35:448][263]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.08.08-17.29.35:472][263]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.08.08-17.29.35:473][263]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 21
+[2026.08.08-17.29.35:473][263]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21, StreamState=4
+[2026.08.08-17.29.35:476][263]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=21, StreamState=2
+[2026.08.08-17.29.35:488][263]LogUObjectHash: Compacting FUObjectHashTables data took   1.48ms
+[2026.08.08-17.29.35:577][264]LogPlayLevel: Display: Destroying online subsystem :Context_29
+[2026.08.08-17.29.37:418][391]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
