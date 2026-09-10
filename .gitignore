@@ -75,3 +75,5 @@ DerivedDataCache/*
 Saved/Logs/cef3.log
 Saved/Logs/Detectsystemp.log
 *.log
+Saved/Logs/cef3.log
+/Saved
