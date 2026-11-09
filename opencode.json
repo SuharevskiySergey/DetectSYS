@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "servers": {
+      "unreal": {
+        "type": "remote",
+        "url": "http://127.0.0.1:3000/mcp",
+        "oauth": false,
+        "headers": {
+          "X-MCP-Capability-Token": "{file:./Saved/MCP/capability-token}"
+        }
+      }
+    }
+  }
+}
