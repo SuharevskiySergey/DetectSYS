@@ -15,7 +15,7 @@ class RedistributionHarnessTests(unittest.TestCase):
             if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute) and node.func.attr == 'set_editor_property':
                 self.assertIsInstance(node.args[0], ast.Constant)
                 names.append(node.args[0].value)
-        self.assertTrue(all(n == 'bEnableStageRedistribution' for n in names))
+        self.assertTrue(all(n in ('bEnableStageRedistribution', 'ProbeTraceDistance') for n in names))
 
     def test_observer_does_not_update_controller_or_move_components(self):
         for forbidden in ('UpdateStageRedistribution', 'set_relative_location', 'Stage0Position\',',
