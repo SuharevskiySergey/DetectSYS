@@ -70,7 +70,7 @@ class TelescopeGeometryTests(unittest.TestCase):
 
     def test_head_shell_fits_but_overlaps_sleeve_axially(self):
         from generate_lapa5_lid import OUTER_RADIUS
-        self.assertEqual(HEAD_SCALE, 1.3)
+        self.assertAlmostEqual(OUTER_RADIUS*HEAD_SCALE, 60)
         self.assertLess(HEAD_OFFSET, OUTER_RADIUS*HEAD_SCALE)
         self.assertGreater(head_shell_clearance(9, (HEAD_OFFSET, 0, 0), OUTER_RADIUS*HEAD_SCALE), 1.8)
         self.assertLess(head_shell_clearance(9, (14, 0, 0), OUTER_RADIUS*HEAD_SCALE), 0)

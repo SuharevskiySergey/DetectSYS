@@ -16,10 +16,14 @@ APERTURE_RADIUS = 60.0
 SIDES = 64
 LATITUDES = 32
 APERTURE_ANGLE = math.asin(APERTURE_RADIUS/OUTER_RADIUS)
+INNER_APERTURE_ANGLE = math.asin(APERTURE_RADIUS/INNER_RADIUS)
 OUTER_LIP_X = OUTER_RADIUS*math.cos(APERTURE_ANGLE)
 CENTER_X = HEAD_OFFSET-OUTER_LIP_X
-INNER_LIP_X = INNER_RADIUS*math.cos(APERTURE_ANGLE)
-PORTAL_SLOPE = math.tan(APERTURE_ANGLE)*math.cos(math.pi/SIDES)
+INNER_LIP_X = INNER_RADIUS*math.cos(INNER_APERTURE_ANGLE)
+# Begin the certified cylinder behind the inner lip, where the cavity still
+# contains it. This avoids forcing a tangent seated sphere into a smaller ball.
+PORTAL_START_X = 181.0
+PORTAL_RADIUS = APERTURE_RADIUS*math.cos(math.pi/SIDES)
 
 
 def build_shell(sides=SIDES, latitudes=LATITUDES):
@@ -31,24 +35,25 @@ def build_shell(sides=SIDES, latitudes=LATITUDES):
         radial = (math.cos(theta), math.sin(theta)*math.cos(phi), math.sin(theta)*math.sin(phi))
         vertices.append(tuple(radius*x for x in radial))
         if surface == 2:
-            normals.append((math.sin(theta), -math.cos(theta)*math.cos(phi), -math.cos(theta)*math.sin(phi)))
+            normals.append((0.0, -math.cos(phi), -math.sin(phi)))
         else:
             normals.append(tuple((1 if surface == 0 else -1)*x for x in radial))
         uvs.append((surface*2+phi/math.tau, v))
         return len(vertices)
 
     for surface, radius in ((0, OUTER_RADIUS), (1, INNER_RADIUS)):
+        opening_angle = APERTURE_ANGLE if surface == 0 else INNER_APERTURE_ANGLE
         rows = []
         for i in range(latitudes+1):
             t = i/latitudes
-            theta = APERTURE_ANGLE+t*(math.pi-APERTURE_ANGLE)
+            theta = opening_angle+t*(math.pi-opening_angle)
             rows.append([vertex(radius, theta, math.tau*j/sides, surface, t) for j in range(sides+1)])
         for i in range(latitudes):
             for j in range(sides):
                 a, b, c, d = rows[i][j], rows[i+1][j], rows[i+1][j+1], rows[i][j+1]
                 triangles = [(a, b, c), (a, c, d)]
                 faces.extend(triangles if surface == 0 else [tuple(reversed(f)) for f in triangles])
-    rim = [[vertex(r, APERTURE_ANGLE, math.tau*j/sides, 2, v) for j in range(sides+1)]
+    rim = [[vertex(r, math.asin(APERTURE_RADIUS/r), math.tau*j/sides, 2, v) for j in range(sides+1)]
            for r, v in ((OUTER_RADIUS, 0), (INNER_RADIUS, 1))]
     for j in range(sides):
         a, b, c, d = rim[0][j], rim[0][j+1], rim[1][j+1], rim[1][j]
@@ -81,27 +86,26 @@ def inner_safe_radius():
 
 
 def sphere_clearance(center, radius):
-    """Sufficient free-ball / open-cone bounds on a sphere's axial pieces.
+    """Sufficient free-ball / cylindrical-portal bounds on axial pieces.
 
-    Behind the inner lip require containment in the free inner ball. Between
-    that lip and the frontmost possible body point require containment in the
-    inscribed aperture cone. Beyond X=OUTER_RADIUS the body cannot exist.
+    Behind PORTAL_START_X require containment in the free inner ball; ahead
+    require the inscribed aperture cylinder until the frontmost body point.
     """
     x, y, z = center
     rho = math.hypot(y, z)
     norm = math.sqrt(x*x+rho*rho)
     interior = portal = None
-    if x-radius <= INNER_LIP_X:
-        upper = min(x+radius, INNER_LIP_X)
+    if x-radius <= PORTAL_START_X:
+        upper = min(x+radius, PORTAL_START_X)
         farthest_x = x+radius*x/norm if norm else x
         at = min(upper, max(x-radius, farthest_x))
         cross = math.sqrt(max(0.0, radius*radius-(at-x)**2))
         interior = inner_safe_radius()-math.hypot(at, rho+cross)
-    lower, upper = max(x-radius, INNER_LIP_X), min(x+radius, OUTER_RADIUS)
+    lower, upper = max(x-radius, PORTAL_START_X), min(x+radius, OUTER_RADIUS)
     if lower <= upper:
-        at = min(upper, max(lower, x-PORTAL_SLOPE*radius/math.sqrt(1+PORTAL_SLOPE**2)))
+        at = min(upper, max(lower, x))
         cross = math.sqrt(max(0.0, radius*radius-(at-x)**2))
-        portal = PORTAL_SLOPE*at-rho-cross
+        portal = PORTAL_RADIUS-rho-cross
     return {"interior": interior, "portal": portal}
 
 

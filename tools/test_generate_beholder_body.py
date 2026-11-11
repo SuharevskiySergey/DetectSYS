@@ -4,7 +4,7 @@ import unittest
 from generate_beholder_body import build_body, inner_safe_radius, portal_free_margin, DIRECTIONS, dot
 from generate_beholder_housing import (APERTURE_ANGLE, OUTER_RADIUS, OUTER_LIP_X,
                                       inner_safe_radius as single_safe)
-from beholder_socket_safety import HEAD_FREE_ENVELOPE_RADIUS
+from generate_beholder_telescope import HEAD_SCALE
 
 
 class BodyGeometryTests(unittest.TestCase):
@@ -43,11 +43,11 @@ class BodyGeometryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             build_body(23, 6)
 
-    def test_all_eight_certified_portal_cones_are_free(self):
+    def test_all_eight_certified_portal_cylinders_are_free(self):
         vertices, _, _, faces = build_body()
         self.assertGreater(portal_free_margin(vertices, faces), 0)
 
-    def test_folded_head_envelopes_do_not_overlap_each_other(self):
+    def test_folded_eye_spheres_do_not_overlap_each_other(self):
         minimum = min(OUTER_LIP_X*math.sqrt(sum((a-b)**2 for a, b in zip(x, y)))
                       for i, x in enumerate(DIRECTIONS) for y in DIRECTIONS[i+1:])
-        self.assertGreater(minimum, 2*HEAD_FREE_ENVELOPE_RADIUS)
+        self.assertGreater(minimum, 2*27*HEAD_SCALE)

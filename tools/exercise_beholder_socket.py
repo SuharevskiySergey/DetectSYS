@@ -88,7 +88,7 @@ def start():
                     command('SetHeadClawOpening', i, 1.0)
                 next_phase()
             elif phase == 3 and age > 1.5:
-                assert max(abs(a-0.75) for a in claws) < 0.001, 'Seated claw limit was not applied'
+                assert max(abs(a-0.6) for a in claws) < 0.001, 'Seated claw limit was not applied'
                 for i, value in enumerate((0.25, 0.6, 0.9)):
                     command('SetHeadClawOpening', i, value)
                 command('SetMotionMode', True)
@@ -100,9 +100,9 @@ def start():
                 next_phase()
             elif phase == 5 and age > 1:
                 assert sum(claws) < 1e-5, 'Mid-stroke opening was not deferred'
-                command('SetLegExtension', 0.15)
+                command('SetLegExtension', 0.2)
                 next_phase()
-            elif phase == 6 and abs(amount-0.15) < 1e-6 and age > 1:
+            elif phase == 6 and abs(amount-0.2) < 1e-6 and age > 1:
                 next_phase()
             elif phase == 7 and age > 1.5:
                 assert max(abs(a-b) for a, b in zip(claws, (0.25, 1, 0.9))) < 0.001

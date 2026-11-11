@@ -22,8 +22,8 @@ class SocketSafetyTests(unittest.TestCase):
         self.assertEqual(requested_claw(2, -1, False), 1)
 
     def test_seated_claws_are_limited_without_losing_requests(self):
-        self.assertEqual(requested_claw(1, -1, False, seated=True), 0.75)
-        self.assertEqual(requested_claw(0.2, 1, False, seated=True), 0.75)
+        self.assertEqual(requested_claw(1, -1, False, seated=True), 0.6)
+        self.assertEqual(requested_claw(0.2, 1, False, seated=True), 0.6)
         self.assertEqual(requested_claw(0.2, 0.1, False, seated=True), 0.1)
         self.assertEqual(requested_claw(1, -1, False, seated=False), 1)
 
@@ -34,6 +34,6 @@ class SocketSafetyTests(unittest.TestCase):
         self.assertTrue(locked(stages, 0.2, True, outside=True))
 
     def test_outside_plane_has_envelope_and_margin(self):
-        self.assertFalse(head_outside(310.999))
-        self.assertTrue(head_outside(311))
+        self.assertFalse(head_outside(380.999))
+        self.assertTrue(head_outside(381))
         self.assertFalse(head_outside(float('nan')))

@@ -1,10 +1,11 @@
 """Reference policy; the live controller is authored in the leg Blueprint."""
 from generate_beholder_telescope import stage_targets
 
-SEATED_CLAW_OPENING_MAX = 0.75
+SEATED_CLAW_OPENING_MAX = 0.6
 # All claw vertices preserve their distance to the head centre. Measured max
-# is 96.95646 cm for scale 1.3; 110 also encloses the eye/eyelid (35.1 cm).
-HEAD_FREE_ENVELOPE_RADIUS = 110.0
+# was 96.95646 cm at scale 1.3; the enlarged head is below 166 cm. The
+# conservative 180 cm envelope also encloses the 60 cm eye/eyelid.
+HEAD_FREE_ENVELOPE_RADIUS = 180.0
 HEAD_OUTSIDE_MARGIN = 1.0
 
 

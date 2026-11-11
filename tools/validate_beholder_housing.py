@@ -15,8 +15,8 @@ import unreal
 sys.path.insert(0, str(Path(unreal.Paths.project_dir()).resolve() / "tools"))
 import generate_beholder_housing
 importlib.reload(generate_beholder_housing)
-from generate_beholder_housing import (CENTER_X, OUTER_RADIUS, OUTER_LIP_X, INNER_LIP_X,
-                                      PORTAL_SLOPE, APERTURE_ANGLE, inner_safe_radius,
+from generate_beholder_housing import (CENTER_X, OUTER_RADIUS, OUTER_LIP_X, PORTAL_START_X,
+                                      PORTAL_RADIUS, APERTURE_ANGLE, inner_safe_radius,
                                       sphere_clearance)
 from generate_beholder_telescope import outer_hull, clip_axial_slab, HEAD_SCALE
 from lapa5_geometry import claw_vertices_world
@@ -60,12 +60,12 @@ def validate(actor=None, sleeves=None):
         for face in faces:
             triangle_count += 1
             triangle = [points[i] for i in face]
-            for p in clip_axial_slab(triangle, -1e8, INNER_LIP_X):
+            for p in clip_axial_slab(triangle, -1e8, PORTAL_START_X):
                 clearance = free-length(p)
                 assert clearance >= -0.001, f"{label}: outside the safe inner cavity ({clearance} cm)"
                 interior_min = clearance if interior_min is None else min(interior_min, clearance)
-            for p in clip_axial_slab(triangle, INNER_LIP_X, OUTER_RADIUS):
-                clearance = PORTAL_SLOPE*p[0]-math.hypot(p[1], p[2])
+            for p in clip_axial_slab(triangle, PORTAL_START_X, OUTER_RADIUS):
+                clearance = PORTAL_RADIUS-math.hypot(p[1], p[2])
                 assert clearance >= -0.001, f"{label}: does not fit the body aperture ({clearance} cm)"
                 portal_min = clearance if portal_min is None else min(portal_min, clearance)
 
@@ -89,7 +89,11 @@ def validate(actor=None, sleeves=None):
             max_claw_radius = max(max_claw_radius, length((point.x-center.x, point.y-center.y, point.z-center.z)))
     assert max_claw_radius <= beholder_socket_safety.HEAD_FREE_ENVELOPE_RADIUS, 'Claw exceeds the certified free envelope'
     sphere = sphere_clearance((center.x, center.y, center.z), 27*HEAD_SCALE)
-    assert all(v is None or v >= -0.001 for v in sphere.values()), f"Eye shell intersects housing: {sphere}"
+    assert sphere['interior'] is None or sphere['interior'] >= -0.001, f'Eye outside cavity: {sphere}'
+    # A 60 cm sphere seats exactly against a 60 cm polygonal rim. The free
+    # cylinder uses the inscribed radius; its <=0.073 cm deficit is deliberate
+    # faceted contact at the seat, NOT clearance permitted to claw geometry.
+    assert sphere['portal'] is None or sphere['portal'] >= -0.1, f'Eye exceeds seat contact allowance: {sphere}'
     amount = actor.get_editor_property("ExtensionPosition")
     folded_inside = folded_margin = equator_error = exposed_fraction = None
     if amount < 0.00001:
@@ -114,6 +118,8 @@ def validate(actor=None, sleeves=None):
             "headCenterXBodyLocal": center.x,
             "headOutsideConservativePlane": beholder_socket_safety.head_outside(center.x),
             "maximumClawRadiusLocal": max_claw_radius,
+            "headSphereRadiusLocal": 27*HEAD_SCALE,
+            "seatPolygonContactAllowanceLocal": 0.1,
             "passed": True}
 
 

@@ -8,7 +8,7 @@ import math
 from pathlib import Path
 
 from generate_beholder_housing import (OUTER_RADIUS, INNER_RADIUS, APERTURE_ANGLE,
-                                      INNER_LIP_X, PORTAL_SLOPE)
+                                      INNER_APERTURE_ANGLE, PORTAL_START_X, PORTAL_RADIUS)
 from generate_beholder_telescope import clip_axial_slab
 
 SIDES = 144
@@ -32,7 +32,7 @@ def build_body(sides=SIDES, rows=ROWS):
         tangent = tuple(math.cos(phi)*a+math.sin(phi)*b for a, b in zip(u, v))
         radial = tuple(math.cos(theta)*a+math.sin(theta)*b for a, b in zip(n, tangent))
         vertices.append(tuple(0.0 if abs(radius*x) < 1e-9 else radius*x*s for x, s in zip(radial, signs)))
-        normal = tuple(math.sin(theta)*a-math.cos(theta)*b for a, b in zip(n, tangent)) if surface == 2 else tuple(x*(1 if surface == 0 else -1) for x in radial)
+        normal = tuple(-x for x in tangent) if surface == 2 else tuple(x*(1 if surface == 0 else -1) for x in radial)
         normals.append(tuple(x*s for x, s in zip(normal, signs)))
         uvs.append((island*6+surface*2+(phi-math.pi/6)/math.tau, theta if surface != 2 else radius/OUTER_RADIUS))
         return len(vertices)
@@ -44,6 +44,7 @@ def build_body(sides=SIDES, rows=ROWS):
             faces.append((c, b, a) if reverse != inward else (a, b, c))
 
         for surface, radius in ((0, OUTER_RADIUS), (1, INNER_RADIUS)):
+            opening_angle = APERTURE_ANGLE if surface == 0 else INNER_APERTURE_ANGLE
             grid = []
             for i in range(rows+1):
                 ring = []
@@ -51,7 +52,7 @@ def build_body(sides=SIDES, rows=ROWS):
                     phi = math.pi/6+math.tau*j/sides
                     tangent = tuple(math.cos(phi)*a+math.sin(phi)*b for a, b in zip(u, v))
                     boundary = min(math.atan2(n[k], -tangent[k]) for k in range(3) if tangent[k] < -1e-10)
-                    theta = APERTURE_ANGLE+(boundary-APERTURE_ANGLE)*i/rows
+                    theta = opening_angle+(boundary-opening_angle)*i/rows
                     ring.append(vertex(radius, theta, phi, signs, island, surface))
                 grid.append(ring)
             for i in range(rows):
@@ -59,7 +60,7 @@ def build_body(sides=SIDES, rows=ROWS):
                     a, b, c, d = grid[i][j], grid[i+1][j], grid[i+1][j+1], grid[i][j+1]
                     face(a, b, c, surface == 1)
                     face(a, c, d, surface == 1)
-        rim = [[vertex(radius, APERTURE_ANGLE, math.pi/6+math.tau*j/sides, signs, island, 2)
+        rim = [[vertex(radius, math.asin(60.0/radius), math.pi/6+math.tau*j/sides, signs, island, 2)
                 for j in range(sides+1)] for radius in (OUTER_RADIUS, INNER_RADIUS)]
         for j in range(sides):
             a, b, c, d = rim[0][j], rim[0][j+1], rim[1][j+1], rim[1][j]
@@ -81,11 +82,11 @@ def inner_safe_radius(vertices, faces):
 
 
 def portal_free_margin(vertices, faces):
-    """Prove each clipped body facet stays outside the certified socket cone.
+    """Prove each clipped body facet stays outside the certified cylinder.
 
-    A supporting radial plane bounds the cone from outside. Checking every
+    A supporting radial plane bounds the cylinder from outside. Checking every
     clipped polygon vertex against that linear plane certifies the whole facet,
-    unlike just checking vertex distance to the cone (a convex function).
+    unlike just checking vertex distance to the axis (a convex function).
     """
     minimum = math.inf
     for n in DIRECTIONS:
@@ -95,15 +96,15 @@ def portal_free_margin(vertices, faces):
         projected = [(dot(p, n), dot(p, u), dot(p, v)) for p in vertices]
         for face in faces:
             triangle = [projected[i-1] for i in face]
-            if max(p[0] for p in triangle) < INNER_LIP_X:
+            if max(p[0] for p in triangle) < PORTAL_START_X:
                 continue
-            polygon = clip_axial_slab(triangle, INNER_LIP_X, OUTER_RADIUS)
+            polygon = clip_axial_slab(triangle, PORTAL_START_X, OUTER_RADIUS)
             if not polygon:
                 continue
             y, z = sum(p[1] for p in polygon), sum(p[2] for p in polygon)
             rho = math.hypot(y, z)
             assert rho > 1e-6, 'Body facet spans a socket axis'
-            minimum = min(minimum, min((p[1]*y+p[2]*z)/rho-PORTAL_SLOPE*p[0] for p in polygon))
+            minimum = min(minimum, min((p[1]*y+p[2]*z)/rho-PORTAL_RADIUS for p in polygon))
     return minimum
 
 

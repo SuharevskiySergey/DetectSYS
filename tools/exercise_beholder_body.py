@@ -55,17 +55,17 @@ def start():
             if phase == 0:
                 rows = checkpoint()
                 assert all(row['extension'] < 1e-6 for row in rows)
-                call(body, 'SetBodyLegExtension', 7, 0.15)
+                call(body, 'SetBodyLegExtension', 7, 0.2)
                 call(branches[7], 'SetHeadOpening', 1.0)
                 call(branches[1], 'SetHeadOpening', 1.0)
                 call(branches[2], 'SetHeadEyelidOpening', 0.0)
                 advance()
             elif phase == 1 and age > 2.5:
                 rows = checkpoint()
-                assert abs(rows[7]['extension']-0.15) < 1e-6
+                assert abs(rows[7]['extension']-0.2) < 1e-6
                 assert all(rows[i]['extension'] < 1e-6 for i in range(7))
                 assert min(rows[7]['claws']) > 0.999
-                assert all(abs(c-0.75) < 0.001 for c in rows[1]['claws'])
+                assert all(abs(c-0.6) < 0.001 for c in rows[1]['claws'])
                 assert rows[2]['eyelid'] < 0.001 and rows[3]['eyelid'] > 0.999
                 # Bad body indices must not route to a real branch.
                 for index in (-1, 8):

@@ -11,8 +11,12 @@ from generate_beholder_body import write_obj
 PATH = '/Game/BeholderPrototype/Body/SM_BeholderEightSocketBody'
 
 
-def build():
-    assert not unreal.EditorAssetLibrary.does_asset_exist(PATH), f'Refusing to overwrite {PATH}'
+def build(reimport_generated=False):
+    if unreal.EditorAssetLibrary.does_asset_exist(PATH):
+        assert reimport_generated, f'Refusing to overwrite {PATH}'
+        existing = unreal.load_asset(PATH)
+        source = existing.get_editor_property('asset_import_data').get_first_filename()
+        assert Path(source).resolve() == (ROOT / 'Saved/Generated/BeholderEightSocketBody.obj').resolve()
     material = unreal.load_asset('/Game/BeholderPrototype/Materials/M_Claw_Prototype')
     assert material
     options = unreal.FbxImportUI()
@@ -32,7 +36,7 @@ def build():
     task.filename = str(write_obj(ROOT / 'Saved/Generated/BeholderEightSocketBody.obj'))
     task.destination_path, task.destination_name = PATH.rsplit('/', 1)
     task.automated = True
-    task.replace_existing = False
+    task.replace_existing = reimport_generated
     task.save = False
     task.factory = unreal.FbxFactory()
     task.options = options

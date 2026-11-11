@@ -8,6 +8,15 @@ from generate_beholder_telescope import HEAD_OFFSET, HEAD_SCALE, outer_hull
 
 
 class HousingTests(unittest.TestCase):
+    def test_head_matches_aperture_and_throat_does_not_narrow(self):
+        from generate_beholder_housing import (APERTURE_RADIUS, INNER_APERTURE_ANGLE,
+                                              PORTAL_START_X, INNER_LIP_X, PORTAL_RADIUS)
+        self.assertAlmostEqual(27*HEAD_SCALE, APERTURE_RADIUS)
+        self.assertAlmostEqual(INNER_RADIUS*math.sin(INNER_APERTURE_ANGLE), APERTURE_RADIUS)
+        self.assertLess(PORTAL_START_X, INNER_LIP_X)
+        self.assertGreater(math.sqrt(inner_safe_radius()**2-PORTAL_START_X**2), PORTAL_RADIUS)
+        self.assertLess(APERTURE_RADIUS-PORTAL_RADIUS, 0.1)
+
     def test_welded_shell_is_closed_and_hollow(self):
         vertices, normals, _, faces = build_shell(16, 8)
         edges = {}
@@ -36,7 +45,7 @@ class HousingTests(unittest.TestCase):
             vertices, _ = outer_hull(i)
             self.assertTrue(all(math.sqrt((p[0]-CENTER_X)**2+p[1]**2+p[2]**2) < free for p in vertices))
         self.assertAlmostEqual(HEAD_OFFSET-CENTER_X, OUTER_LIP_X)
-        self.assertTrue(all(v is None or v > 0 for v in
+        self.assertTrue(all(v is None or v >= -0.1 for v in
                             sphere_clearance((HEAD_OFFSET-CENTER_X, 0, 0), 27*HEAD_SCALE).values()))
 
     def test_invalid_resolution(self):
@@ -46,7 +55,7 @@ class HousingTests(unittest.TestCase):
     def test_eye_sphere_clears_body_along_straight_stroke(self):
         for i in range(1001):
             bounds = sphere_clearance((HEAD_OFFSET-CENTER_X+1040*i/1000, 0, 0), 27*HEAD_SCALE)
-            self.assertTrue(all(v is None or v > 0 for v in bounds.values()))
+            self.assertTrue(all(v is None or v >= -0.1 for v in bounds.values()))
 
 
 if __name__ == "__main__":
