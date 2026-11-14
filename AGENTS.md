@@ -1,11 +1,13 @@
 # Repository guidance
 
 ## Setup and verification
-- Open `Detectsystemp.uproject` with Unreal Engine **5.6**. This is a Blueprint/content-only project: no `Source/`, C++ modules, or repository-defined build, lint, or automated-test commands.
+- User policy: do not run tests without an explicit user request. This includes the fast/full Python suites, targeted tests, PIE regression/probe scripts and diagnostic test scenarios. If verification is needed, ask for permission first. A generic "continue" is not permission to run tests. Report verification as not performed when permission has not been given.
+- Open `Detectsystemp.uproject` with Unreal Engine **5.6**. This is a Blueprint/content-only project: no `Source/`, C++ modules, or repository-defined build/lint commands. Standalone Python checks: `python tools/run_tests.py` runs a deterministic half-suite by default (currently 213/426); use `python tools/run_tests.py --full` for the full regression suite. Fast selection takes every second sorted test ID, not a safety/coverage guarantee; use full verification for acceptance. `--list` prints the selection without running it.
 - The project enables `Locomotor`, `GameplayStateTree`, `PhysicsControl`, and editor-only `ModelingToolsEditorMode`; ensure the engine installation provides these plugins, especially `Locomotor`, rather than disabling them to bypass startup errors.
 - `Plugins/EngineWire/` contains EngineWire 0.6.0 with local Win64 binaries built for UE 5.6.1. Its native MCP server defaults to loopback port 3000; the capability token is generated in `Saved/MCP/capability-token` and must not be committed. Plugin binaries are ignored by Git, so a fresh checkout needs a matching prebuilt plugin or a separate `RunUAT.bat BuildPlugin` build (the project has no C++ target).
 - Keep `MovieRenderPipeline` and `MoviePipelineMaskRenderPass` enabled in `.uproject`: this EngineWire build imports their DLLs directly and fails to load with Windows error 126 if they are disabled, despite its optional plugin declarations.
 - For gameplay changes, compile the affected Blueprints in Unreal Editor and exercise them in Play In Editor on `/Game/ThirdPerson/Lvl_ThirdPerson`. Report editor verification as unperformed if Unreal is unavailable.
+- `/Game/ThirdPerson/Lvl_ThirdPerson` now overrides the project game mode with `/Game/BeholderPrototype/BP_BeholderPreviewGameMode`: native `SpectatorPawn` free flight starts above `BeholderBody_Demo` at (-1100,1600,1250). The old `BP_Beh_ShemaTry_Fly` level instance no longer auto-possesses Player 0. Project-wide third-person defaults remain unchanged.
 
 ## Where behavior lives
 - `Task.md` is the Beholder specification: checked `[УТВЕРЖДЕНО]` items are approved requirements, not implemented features. Actual progress is in section 16 and `docs/BeholderPrototype.md`. New isolated eye-prototype assets live in `Content/BeholderPrototype/`; do not mistake its masked eyelid and primitive claws for the final organic rig.
@@ -14,6 +16,7 @@
 - `Config/DefaultEngine.ini` selects both the startup/game map (`/Game/ThirdPerson/Lvl_ThirdPerson`) and default game mode (`/Game/ThirdPerson/Blueprints/BP_ThirdPersonGameMode`). The template map path in `DefaultEditor.ini` is not the configured startup map.
 - Custom search assets are in **`Content/Bluprient/`** (intentional existing spelling): `BPC_Search_SYS`, `BPC_Sercher_Stats`, `BP_Searcher`, `BP_SearchTower`, and `BP_ObjectToSearch`. Preserve these exact asset paths/names; do not normalize spelling from the filesystem.
 - Beholder/rig experiments are under `Content/Bluprient/Beholder/` and `Content/Bluprient/New_Beh/`; the third-person character/controller/game mode are under `Content/ThirdPerson/Blueprints/`.
+- `tools/build_beholder_native_stage_audit.py` is an already-installed, non-idempotent diagnostic graph plan on the isolated redistribution test Blueprint. Do not blindly reapply it. `RedistributionNativeStep*` counters/maxima are lifetime telemetry (not reset per direction); `tools/beholder_native_stage_observation.py` consumes them fail-closed using a fresh per-motion baseline, complete sample coverage, matching update/direction stamps and sticky violation/invalid flags. Aggregate multi-Tick displacement alone cannot certify hidden steps. Telemetry does not alter runtime guards or authorize dogleg/IK motion.
 - Input uses **Enhanced Input** (`Config/DefaultInput.ini`); action and mapping-context assets live under `Content/Input/`, not legacy INI action mappings.
 
 ## Asset and configuration pitfalls
