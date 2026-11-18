@@ -1,0 +1,9 @@
+// UNAPPLIED DRAFT: additive fragments, NOT a replacement UObjectBase.h.
+
+// At public-header include block:
+#include "UObject/StoredOuterObservation.h"
+
+// Inside UObjectBase, under public: (NOT a virtual, no new data fields):
+    // Caller guarantees already-live borrowed object and synchronous protected
+    // access. Does not pin source/outer or certify a stable hierarchy/path.
+    COREUOBJECT_API UE::CoreUObject::FStoredOuterObservationV1 ObserveStoredOuterV1() const;

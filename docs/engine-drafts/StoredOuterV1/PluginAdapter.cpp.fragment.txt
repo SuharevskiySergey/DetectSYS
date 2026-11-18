@@ -1,0 +1,106 @@
+// UNAPPLIED DRAFT ONLY. Not part of the plugin build. No installed API implied.
+// Proposed CUSTOM-ENGINE variant adapter; do not replace current outer reader.
+// Build rules must define this project opt-in only for matched custom artifacts.
+#if defined(ENGINEWIRE_WITH_STORED_OUTER_ACCESSOR) && ENGINEWIRE_WITH_STORED_OUTER_ACCESSOR
+
+#include "Domains/Blueprint/Queries/McpBPOwnershipSCSWalkGuards.h"
+#include "UObject/Object.h"
+#include "UObject/ObjectHandleDefines.h"
+#include "UObject/StoredOuterObservation.h" // Hypothetical new public engine header.
+
+namespace McpBPOwnershipBindingReader::StoredOuterAdapterDraft
+{
+enum class EStop : uint8
+{
+    NotStarted, Observed, CapabilityMismatch, Unsupported, NullInput,
+    GuardRefusal, RefusedContext, Unresolved, Invalid, MalformedResult
+};
+
+struct FRead
+{
+    bool bAccepted = false;
+    EStop Stop = EStop::NotStarted;
+    const UObject* Outer = nullptr; // Accepted + null means observed resolved-null.
+};
+
+FRead ReadBorrowedOuter(const UObject* Source, FSCSWalkGuards& Guards)
+{
+    using namespace UE::CoreUObject;
+    FRead Result;
+    // Hard static imports are intentional in this SEPARATE custom-engine variant.
+    // If exports are missing from CoreUObject, loader failure precedes this query.
+    const FStoredOuterObservationCapabilityV1 Capability = QueryStoredOuterObservationCapabilityV1();
+    if (Capability.Version != StoredOuterObservationVersionV1
+        || Capability.Size != sizeof(FStoredOuterObservationCapabilityV1)
+        || Capability.ObservationSize != sizeof(FStoredOuterObservationV1)
+        || Capability.Reserved != 0
+        || Capability.LateResolve != uint32(UE_WITH_OBJECT_HANDLE_LATE_RESOLVE ? 1 : 0)
+        || Capability.RemoteHandles != uint32(UE_WITH_REMOTE_OBJECT_HANDLE ? 1 : 0)
+        || Capability.EditorOnlyData != uint32(WITH_EDITORONLY_DATA ? 1 : 0))
+    {
+        Result.Stop = EStop::CapabilityMismatch;
+        return Result;
+    }
+    if (Capability.LocalStoredWrapperObservation != 1 || Capability.RemoteHandles != 0)
+    {
+        Result.Stop = EStop::Unsupported;
+        return Result;
+    }
+    if (!Source)
+    {
+        Result.Stop = EStop::NullInput;
+        return Result; // Never invoke a member on null.
+    }
+    if (!Guards.HoldResolvedBorrowed(Source))
+    {
+        Result.Stop = EStop::GuardRefusal;
+        return Result;
+    }
+
+    const FStoredOuterObservationV1 Observation = Source->ObserveStoredOuterV1();
+    if (Observation.Version != StoredOuterObservationVersionV1
+        || Observation.Size != sizeof(FStoredOuterObservationV1)
+        || Observation.Reserved != 0)
+    {
+        Result.Stop = EStop::MalformedResult;
+        return Result;
+    }
+    // Only the exact resolved-object state may carry a non-null borrowed pointer.
+    if ((Observation.State == EStoredOuterObservationStateV1::ResolvedObject) != (Observation.Outer != nullptr))
+    {
+        Result.Stop = EStop::MalformedResult;
+        return Result;
+    }
+    switch (Observation.State)
+    {
+    case EStoredOuterObservationStateV1::ResolvedNull:
+    case EStoredOuterObservationStateV1::ResolvedObject:
+        if (!Guards.HoldResolvedBorrowed(Observation.Outer) || !Guards.Recheck())
+        {
+            Result.Stop = EStop::GuardRefusal;
+            return Result;
+        }
+        Result.Outer = Observation.Outer;
+        Result.Stop = EStop::Observed;
+        Result.bAccepted = true;
+        return Result;
+    case EStoredOuterObservationStateV1::Unsupported:
+        Result.Stop = EStop::Unsupported;
+        return Result;
+    case EStoredOuterObservationStateV1::RefusedContext:
+        Result.Stop = EStop::RefusedContext;
+        return Result;
+    case EStoredOuterObservationStateV1::Unresolved:
+        Result.Stop = EStop::Unresolved;
+        return Result;
+    case EStoredOuterObservationStateV1::Invalid:
+        Result.Stop = EStop::Invalid;
+        return Result;
+    default:
+        // Includes engine member returning adapter-only NullInput or unknown enum.
+        Result.Stop = EStop::MalformedResult;
+        return Result;
+    }
+}
+} // namespace McpBPOwnershipBindingReader::StoredOuterAdapterDraft
+#endif

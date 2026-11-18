@@ -1,0 +1,27 @@
+{
+  "status": "reference-only; draft not applied, compiled, tested or dry-run checked",
+  "referenceRoot": "C:/Program Files/Epic Games/UE_5.6/Engine/Source",
+  "binaryProvenanceVerified": false,
+  "files": [
+    {
+      "path": "Runtime/CoreUObject/Public/UObject/UObjectBase.h",
+      "sha256": "9BD6151ADC696A20087D5F39E96226EC206B601B7A7A9CF00E8E71A8F5CD8DB2"
+    },
+    {
+      "path": "Runtime/CoreUObject/Private/UObject/UObjectBase.cpp",
+      "sha256": "5169B78822E4537F2975EE9597AF21EFD72F8A279108D8E7806F0AB8A7508B2A"
+    },
+    {
+      "path": "Runtime/CoreUObject/Public/UObject/ObjectPtr.h",
+      "sha256": "23E1CA940B00FB44ACBF3F92FA0A4E36AF5E05174822B0F1B5F1C8CB5BFBBA2D"
+    },
+    {
+      "path": "Runtime/CoreUObject/Public/UObject/ObjectHandle.h",
+      "sha256": "BAEE5B619603FD57E73958AA86F6987F5351063B8CE6DA9FC7AA16224535EDC8"
+    },
+    {
+      "path": "Runtime/CoreUObject/Public/UObject/ObjectHandleDefines.h",
+      "sha256": "749438EA160481E5251271058AF1C2CAE77A2EDA69919C59887B37AB99882AF5"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Missing outer accessor — integration contract, not implementation
 
+Unapplied implementation sketch now stored as text in `docs/engine-drafts/StoredOuterV1/` under separate user draft-only permission. It uses a const wrapper reference rather than copy to avoid the conditional GC barrier seen in ObjectPtr copy constructors. No engine/plugin source integration, patch application/dry-run, compile or tests performed. Not an installed/exported API; gate remains closed.
+
 User subsequently chose source-only engine-integration planning. Concrete proposed files/member API/linkage/authorization stages are in `docs/BeholderOwnershipOuterEngineIntegrationPlan.md`. No installed engine modifications/builds/tests granted; custom export names remain hypothetical. Default plugin gate stays closed.
 
 Status: source-only specification. No engine edits/build/install, plugin code changes, test execution or editor calls. This does NOT authorize those operations. Current outer gate remains closed in the tested late1/remote0/editor-data1 plugin configuration.

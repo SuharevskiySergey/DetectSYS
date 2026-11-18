@@ -1,0 +1,164 @@
+--- a/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectBase.h
++++ b/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectBase.h
+@@ -19,6 +19,7 @@
+ #include "UObject/UObjectGlobals.h"
+ #include "UObject/UnrealNames.h"
+ #include "UObject/ObjectPtr.h"
++#include "UObject/StoredOuterObservation.h"
+ #include "AutoRTFM.h"
+ 
+ class UClass;
+@@ -192,6 +193,9 @@
+ 		return ClassPrivate;
+ 	}
+ 	
++	// Draft stored-wrapper observation; borrowed live input required.
++	COREUOBJECT_API UE::CoreUObject::FStoredOuterObservationV1 ObserveStoredOuterV1() const;
++
+ 	/** Returns the UObject this object resides in */
+ 	FORCEINLINE UObject* GetOuter() const
+ 	{
+--- a/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectBase.cpp
++++ b/Engine/Source/Runtime/CoreUObject/Private/UObject/UObjectBase.cpp
+@@ -5,6 +5,12 @@
+ =============================================================================*/
+ 
+ #include "UObject/UObjectBase.h"
++#include "CoreGlobals.h"
++#include "UObject/GarbageCollection.h"
++#include "UObject/Object.h"
++#include "UObject/ObjectHandleDefines.h"
++#include "UObject/StoredOuterObservation.h"
++#include "UObject/UObjectGlobals.h"
+ #include "AutoRTFM.h"
+ #include "Misc/MessageDialog.h"
+ #include "Misc/ConfigCacheIni.h"
+@@ -1395,3 +1401,79 @@
+ 		return TEXT("None");
+ 	}
+ }
++
++// UNAPPLIED StoredOuterV1 candidate definitions.
++namespace UE::CoreUObject
++{
++FStoredOuterObservationCapabilityV1 QueryStoredOuterObservationCapabilityV1()
++{
++    FStoredOuterObservationCapabilityV1 Result;
++    Result.LateResolve = UE_WITH_OBJECT_HANDLE_LATE_RESOLVE ? 1u : 0u;
++    Result.RemoteHandles = UE_WITH_REMOTE_OBJECT_HANDLE ? 1u : 0u;
++    Result.EditorOnlyData = WITH_EDITORONLY_DATA ? 1u : 0u;
++#if !UE_WITH_REMOTE_OBJECT_HANDLE
++    Result.LocalStoredWrapperObservation = 1;
++#endif
++    return Result;
++}
++} // namespace UE::CoreUObject
++
++UE::CoreUObject::FStoredOuterObservationV1 UObjectBase::ObserveStoredOuterV1() const
++{
++    using namespace UE::CoreUObject;
++    FStoredOuterObservationV1 Result;
++#if UE_WITH_REMOTE_OBJECT_HANDLE
++    // Refuse before dereferencing this; remote semantics are not admitted.
++    return Result;
++#else
++    if (!IsInGameThread() || IsEngineExitRequested() || GExitPurge
++        || IsGarbageCollecting() || IsIncrementalUnhashPending()
++        || IsIncrementalPurgePending() || IsIncrementalReachabilityAnalysisPending())
++    {
++        Result.State = EStoredOuterObservationStateV1::RefusedContext;
++        return Result;
++    }
++
++    // Legal only for an already-live UObject; bootstrap UObjectBase storage and
++    // arbitrary/dangling pointer inputs are NOT admitted by this API contract.
++    const UObject* Source = static_cast<const UObject*>(this);
++    if (!IsValid(Source) || Source->IsUnreachable()
++        || Source->HasAnyFlags(RF_BeginDestroyed | RF_FinishDestroyed))
++    {
++        Result.State = EStoredOuterObservationStateV1::Invalid;
++        return Result;
++    }
++
++    // Do NOT copy TObjectPtr: its copy constructor can run a GC barrier.
++    // Access is legal here because this member belongs to the engine owner.
++    const TObjectPtr<UObject>& Stored = OuterPrivate.GetAccessTrackedObjectPtr();
++    if (!Stored.IsResolved())
++    {
++        Result.State = EStoredOuterObservationStateV1::Unresolved;
++        return Result;
++    }
++
++    // Existing engine helper, NOT ordinary GetOuter/Get or a reinterpret cast
++    // in the plugin. Requires separate review in the selected exact checkout.
++    const UObject* Outer = ObjectPtr_Private::Friend::NoAccessTrackingGetNoResolve(Stored);
++    if (!Stored.IsResolved())
++    {
++        Result.State = EStoredOuterObservationStateV1::Unresolved;
++        return Result;
++    }
++    if (!Outer)
++    {
++        Result.State = EStoredOuterObservationStateV1::ResolvedNull;
++        return Result;
++    }
++    if (!IsValid(Outer) || Outer->IsUnreachable()
++        || Outer->HasAnyFlags(RF_BeginDestroyed | RF_FinishDestroyed))
++    {
++        Result.State = EStoredOuterObservationStateV1::Invalid;
++        return Result;
++    }
++    Result.State = EStoredOuterObservationStateV1::ResolvedObject;
++    Result.Outer = Outer;
++    return Result;
++#endif
++}
+--- /dev/null
++++ b/Engine/Source/Runtime/CoreUObject/Public/UObject/StoredOuterObservation.h
+@@ -0,0 +1,46 @@
++// UNAPPLIED DRAFT: proposed new CoreUObject public header. NOT compiled/tested.
++#pragma once
++
++#include "CoreTypes.h"
++
++class UObject;
++
++namespace UE::CoreUObject
++{
++inline constexpr uint32 StoredOuterObservationVersionV1 = 1;
++
++enum class EStoredOuterObservationStateV1 : uint32
++{
++    Unsupported = 0,
++    RefusedContext,
++    NullInput, // Adapter-only state; member must never be dispatched on null.
++    Unresolved,
++    ResolvedNull,
++    ResolvedObject,
++    Invalid
++};
++
++struct FStoredOuterObservationV1
++{
++    uint32 Version = StoredOuterObservationVersionV1;
++    uint32 Size = sizeof(FStoredOuterObservationV1);
++    EStoredOuterObservationStateV1 State = EStoredOuterObservationStateV1::Unsupported;
++    uint32 Reserved = 0;
++    const UObject* Outer = nullptr; // Borrowed, invocation-local, resolved-object only.
++};
++
++struct FStoredOuterObservationCapabilityV1
++{
++    uint32 Version = StoredOuterObservationVersionV1;
++    uint32 Size = sizeof(FStoredOuterObservationCapabilityV1);
++    uint32 ObservationSize = sizeof(FStoredOuterObservationV1);
++    uint32 LocalStoredWrapperObservation = 0;
++    uint32 LateResolve = 0;
++    uint32 RemoteHandles = 0;
++    uint32 EditorOnlyData = 0;
++    uint32 Reserved = 0;
++};
++
++// New export: requires matched custom engine/plugin, not a stock-engine symbol.
++COREUOBJECT_API FStoredOuterObservationCapabilityV1 QueryStoredOuterObservationCapabilityV1();
++} // namespace UE::CoreUObject

@@ -1,0 +1,17 @@
+{
+  "scope": "One explicitly authorized git apply --check on temporary copies of hashed reference files; no application/build/tests/editor/retry",
+  "command": "git apply --check --whitespace=warn StoredOuterV1.unapplied.patch",
+  "checkRoot": "C:/Users/Sergey/AppData/Local/Temp/opencode/66991a186a4640188007e246e9f011e9",
+  "patchSHA256": "A33DE2BED209CDAB077B2E57B5D3876118C51A785078A3ED234E9D035AB8DEAE",
+  "referenceManifest": "ReferenceSources.json",
+  "completedAt": "2026-11-18T14:10:46.1177697Z",
+  "exitCode": 0,
+  "output": [],
+  "changedReferenceEntries": 0,
+  "newHeaderCreated": false,
+  "applied": false,
+  "compiled": false,
+  "testsRun": false,
+  "editorRun": false,
+  "limitations": "Format/context compatibility against these reference copies only; not full engine checkout applicability, compilation, linkage, no-resolution/lifetime behavior or installation readiness. No further execution authorized."
+}

@@ -1,0 +1,46 @@
+// UNAPPLIED DRAFT: proposed new CoreUObject public header. NOT compiled/tested.
+#pragma once
+
+#include "CoreTypes.h"
+
+class UObject;
+
+namespace UE::CoreUObject
+{
+inline constexpr uint32 StoredOuterObservationVersionV1 = 1;
+
+enum class EStoredOuterObservationStateV1 : uint32
+{
+    Unsupported = 0,
+    RefusedContext,
+    NullInput, // Adapter-only state; member must never be dispatched on null.
+    Unresolved,
+    ResolvedNull,
+    ResolvedObject,
+    Invalid
+};
+
+struct FStoredOuterObservationV1
+{
+    uint32 Version = StoredOuterObservationVersionV1;
+    uint32 Size = sizeof(FStoredOuterObservationV1);
+    EStoredOuterObservationStateV1 State = EStoredOuterObservationStateV1::Unsupported;
+    uint32 Reserved = 0;
+    const UObject* Outer = nullptr; // Borrowed, invocation-local, resolved-object only.
+};
+
+struct FStoredOuterObservationCapabilityV1
+{
+    uint32 Version = StoredOuterObservationVersionV1;
+    uint32 Size = sizeof(FStoredOuterObservationCapabilityV1);
+    uint32 ObservationSize = sizeof(FStoredOuterObservationV1);
+    uint32 LocalStoredWrapperObservation = 0;
+    uint32 LateResolve = 0;
+    uint32 RemoteHandles = 0;
+    uint32 EditorOnlyData = 0;
+    uint32 Reserved = 0;
+};
+
+// New export: requires matched custom engine/plugin, not a stock-engine symbol.
+COREUOBJECT_API FStoredOuterObservationCapabilityV1 QueryStoredOuterObservationCapabilityV1();
+} // namespace UE::CoreUObject

@@ -1,5 +1,9 @@
 # Stored outer engine integration — source-only proposal
 
+Draft continuation added `PluginAdapter.cpp.fragment.txt` and `REVIEW.md` under `docs/engine-drafts/StoredOuterV1/`: separate default-off custom variant, capability/result state checks, source/outer guard acquisition, type-safety/helper source audit and explicit by-value ABI limits. Text only, not installed/integrated/compiled/tested; no new Automation cases. A matched ABI is a prerequisite before version/size checks, not something those checks can recover from.
+
+Subsequent user authorization «Да, подготовь черновик» produced an **unapplied text draft** at `docs/engine-drafts/StoredOuterV1/`: proposed public header, additive UObjectBase declaration/implementation fragments, README and reference-source SHA256 manifest. No installed engine edits or application/dry-run/build/tests. Important refinement: no wrapper copy, because UE_OBJECT_PTR_GC_BARRIER copy constructors may mark reachable; draft uses a const wrapper reference and does NOT claim atomic observation. The earlier step3 copy-local sketch below is superseded by this refinement, pending exact-checkout review. Existing closed plugin gate is unchanged.
+
 User selected «План engine-интеграции». Scope: this design and source inspection only. No installed UE edits, generated patch application, engine/plugin build, tests, DLL replacement, installation or editor calls. Current plugin's tested outer gate remains closed. All new API names below are **proposed**, not installed capabilities or commands that can be called now.
 
 ## Chosen boundary

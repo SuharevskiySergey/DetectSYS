@@ -1,0 +1,84 @@
+// UNAPPLIED DRAFT: additive fragments, NOT a replacement UObjectBase.cpp.
+// Add explicit includes if not already present in the target checkout:
+#include "CoreGlobals.h"
+#include "UObject/GarbageCollection.h"
+#include "UObject/Object.h"
+#include "UObject/ObjectHandleDefines.h"
+#include "UObject/StoredOuterObservation.h"
+#include "UObject/UObjectGlobals.h"
+
+// Add below includes at file/namespace scope, not inside another definition:
+namespace UE::CoreUObject
+{
+FStoredOuterObservationCapabilityV1 QueryStoredOuterObservationCapabilityV1()
+{
+    FStoredOuterObservationCapabilityV1 Result;
+    Result.LateResolve = UE_WITH_OBJECT_HANDLE_LATE_RESOLVE ? 1u : 0u;
+    Result.RemoteHandles = UE_WITH_REMOTE_OBJECT_HANDLE ? 1u : 0u;
+    Result.EditorOnlyData = WITH_EDITORONLY_DATA ? 1u : 0u;
+#if !UE_WITH_REMOTE_OBJECT_HANDLE
+    Result.LocalStoredWrapperObservation = 1;
+#endif
+    return Result;
+}
+} // namespace UE::CoreUObject
+
+UE::CoreUObject::FStoredOuterObservationV1 UObjectBase::ObserveStoredOuterV1() const
+{
+    using namespace UE::CoreUObject;
+    FStoredOuterObservationV1 Result;
+#if UE_WITH_REMOTE_OBJECT_HANDLE
+    // Refuse before dereferencing this; remote semantics are not admitted.
+    return Result;
+#else
+    if (!IsInGameThread() || IsEngineExitRequested() || GExitPurge
+        || IsGarbageCollecting() || IsIncrementalUnhashPending()
+        || IsIncrementalPurgePending() || IsIncrementalReachabilityAnalysisPending())
+    {
+        Result.State = EStoredOuterObservationStateV1::RefusedContext;
+        return Result;
+    }
+
+    // Legal only for an already-live UObject; bootstrap UObjectBase storage and
+    // arbitrary/dangling pointer inputs are NOT admitted by this API contract.
+    const UObject* Source = static_cast<const UObject*>(this);
+    if (!IsValid(Source) || Source->IsUnreachable()
+        || Source->HasAnyFlags(RF_BeginDestroyed | RF_FinishDestroyed))
+    {
+        Result.State = EStoredOuterObservationStateV1::Invalid;
+        return Result;
+    }
+
+    // Do NOT copy TObjectPtr: its copy constructor can run a GC barrier.
+    // Access is legal here because this member belongs to the engine owner.
+    const TObjectPtr<UObject>& Stored = OuterPrivate.GetAccessTrackedObjectPtr();
+    if (!Stored.IsResolved())
+    {
+        Result.State = EStoredOuterObservationStateV1::Unresolved;
+        return Result;
+    }
+
+    // Existing engine helper, NOT ordinary GetOuter/Get or a reinterpret cast
+    // in the plugin. Requires separate review in the selected exact checkout.
+    const UObject* Outer = ObjectPtr_Private::Friend::NoAccessTrackingGetNoResolve(Stored);
+    if (!Stored.IsResolved())
+    {
+        Result.State = EStoredOuterObservationStateV1::Unresolved;
+        return Result;
+    }
+    if (!Outer)
+    {
+        Result.State = EStoredOuterObservationStateV1::ResolvedNull;
+        return Result;
+    }
+    if (!IsValid(Outer) || Outer->IsUnreachable()
+        || Outer->HasAnyFlags(RF_BeginDestroyed | RF_FinishDestroyed))
+    {
+        Result.State = EStoredOuterObservationStateV1::Invalid;
+        return Result;
+    }
+    Result.State = EStoredOuterObservationStateV1::ResolvedObject;
+    Result.Outer = Outer;
+    return Result;
+#endif
+}

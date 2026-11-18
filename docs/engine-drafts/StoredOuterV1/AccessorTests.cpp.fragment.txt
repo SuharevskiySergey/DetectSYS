@@ -1,0 +1,127 @@
+// UNAPPLIED TEST DRAFT: matched custom-engine plugin variant ONLY.
+// NOT included in plugin/engine build, NOT compiled/run, no installed API implied.
+// Candidate new Private/Tests TU after separately authorized adapter integration.
+#if defined(ENGINEWIRE_WITH_STORED_OUTER_ACCESSOR) && ENGINEWIRE_WITH_STORED_OUTER_ACCESSOR && WITH_DEV_AUTOMATION_TESTS
+
+#include "Async/Async.h"
+#include "Editor.h"
+#include "HAL/PlatformMisc.h"
+#include "Misc/App.h"
+#include "Misc/AutomationTest.h"
+#include "Misc/CommandLine.h"
+#include "Misc/Parse.h"
+#include "Misc/Paths.h"
+#include "UObject/ObjectHandleDefines.h"
+#include "UObject/Package.h"
+#include "UObject/StoredOuterObservation.h" // Hypothetical custom engine export.
+#include "UObject/UObjectGlobals.h"
+
+namespace StoredOuterAccessorDraftTests
+{
+using namespace UE::CoreUObject;
+
+bool PermitExistingPackageObservation(FAutomationTestBase& Test)
+{
+    const FString Local = FPlatformMisc::GetEnvironmentVariable(TEXT("LOCALAPPDATA"));
+    const FString ProjectDir = FPaths::GetPath(FPaths::ConvertRelativePathToFull(FPaths::GetProjectFilePath()));
+    if (Local.IsEmpty() || !IsInGameThread() || !GEditor || GEditor->IsPlaySessionInProgress()
+        || FString(FApp::GetProjectName()) != TEXT("BeholderStructureTestHost")
+        || !FPaths::IsUnderDirectory(ProjectDir, FPaths::Combine(Local, TEXT("Temp/opencode")))
+        || !FParse::Param(FCommandLine::Get(), TEXT("McpStoredOuterAccessorDraftTests")))
+    {
+        Test.AddError(TEXT("Requires isolated host and explicit -McpStoredOuterAccessorDraftTests opt-in"));
+        return false;
+    }
+    return true;
+}
+
+UPackage* ExistingRootedPackage(FAutomationTestBase& Test)
+{
+    if (!PermitExistingPackageObservation(Test)) return nullptr;
+    UPackage* Package = GetTransientPackage();
+    if (!IsValid(Package) || !Package->IsRooted())
+    {
+        Test.AddError(TEXT("Existing rooted transient package required; no object creation fallback"));
+        return nullptr;
+    }
+    return Package;
+}
+}
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FStoredOuterDraftCapability,
+    "EngineWire.StoredOuterAccessorDraft.Capability",
+    EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+
+bool FStoredOuterDraftCapability::RunTest(const FString& Parameters)
+{
+    using namespace UE::CoreUObject;
+    const auto Capability = QueryStoredOuterObservationCapabilityV1();
+    TestEqual(TEXT("Exact version"), Capability.Version, StoredOuterObservationVersionV1);
+    TestEqual(TEXT("Exact capability layout"), Capability.Size, uint32(sizeof(Capability)));
+    TestEqual(TEXT("Exact observation layout"), Capability.ObservationSize, uint32(sizeof(FStoredOuterObservationV1)));
+    TestEqual(TEXT("Reserved zero"), Capability.Reserved, uint32(0));
+    TestEqual(TEXT("Late-resolve matches linked variant"), Capability.LateResolve,
+        uint32(UE_WITH_OBJECT_HANDLE_LATE_RESOLVE ? 1 : 0));
+    TestEqual(TEXT("Remote matches linked variant"), Capability.RemoteHandles,
+        uint32(UE_WITH_REMOTE_OBJECT_HANDLE ? 1 : 0));
+    TestEqual(TEXT("Editor-data matches linked variant"), Capability.EditorOnlyData,
+        uint32(WITH_EDITORONLY_DATA ? 1 : 0));
+    TestEqual(TEXT("Only local storage capability declared"), Capability.LocalStoredWrapperObservation,
+        uint32(UE_WITH_REMOTE_OBJECT_HANDLE ? 0 : 1));
+    return true;
+}
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FStoredOuterDraftRootedPackage,
+    "EngineWire.StoredOuterAccessorDraft.PackageResolvedNull",
+    EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+
+bool FStoredOuterDraftRootedPackage::RunTest(const FString& Parameters)
+{
+    using namespace UE::CoreUObject;
+    UPackage* Package = StoredOuterAccessorDraftTests::ExistingRootedPackage(*this);
+    if (!Package) return false;
+    const bool BeforeDirty = Package->IsDirty();
+    const bool BeforeRooted = Package->IsRooted();
+    const auto Observation = Package->ObserveStoredOuterV1();
+    TestEqual(TEXT("Observation version"), Observation.Version, StoredOuterObservationVersionV1);
+    TestEqual(TEXT("Observation size"), Observation.Size, uint32(sizeof(Observation)));
+    TestEqual(TEXT("Reserved zero"), Observation.Reserved, uint32(0));
+#if UE_WITH_REMOTE_OBJECT_HANDLE
+    TestTrue(TEXT("Remote refused before storage read"), Observation.State == EStoredOuterObservationStateV1::Unsupported);
+#else
+    TestTrue(TEXT("Existing package has resolved-null outer"), Observation.State == EStoredOuterObservationStateV1::ResolvedNull);
+#endif
+    TestNull(TEXT("No returned outer pointer"), Observation.Outer);
+    TestEqual(TEXT("Dirty unchanged"), Package->IsDirty(), BeforeDirty);
+    TestEqual(TEXT("RootSet unchanged"), Package->IsRooted(), BeforeRooted);
+    // Does NOT inspect private wrapper before/after, count callbacks, certify no
+    // loads, test a resolved NON-NULL outer or demonstrate collection survival.
+    return true;
+}
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FStoredOuterDraftWrongThread,
+    "EngineWire.StoredOuterAccessorDraft.WrongThread",
+    EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+
+bool FStoredOuterDraftWrongThread::RunTest(const FString& Parameters)
+{
+    using namespace UE::CoreUObject;
+    UPackage* Package = StoredOuterAccessorDraftTests::ExistingRootedPackage(*this);
+    if (!Package) return false;
+    if (!GThreadPool) { AddError(TEXT("Existing thread pool required")); return false; }
+    // Rooted existing package stays engine-owned. Worker must refuse before
+    // member storage access; future permission must include this invocation.
+    auto Future = Async(EAsyncExecution::ThreadPool, [Package]()
+    {
+        return Package->ObserveStoredOuterV1();
+    });
+    const auto Observation = Future.Get();
+#if UE_WITH_REMOTE_OBJECT_HANDLE
+    TestTrue(TEXT("Remote unsupported takes precedence"), Observation.State == EStoredOuterObservationStateV1::Unsupported);
+#else
+    TestTrue(TEXT("Worker refused context"), Observation.State == EStoredOuterObservationStateV1::RefusedContext);
+#endif
+    TestNull(TEXT("Worker returns no pointer"), Observation.Outer);
+    return true;
+}
+#endif

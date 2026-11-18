@@ -1,5 +1,21 @@
 # Partial reader: границы следующей проверки
 
+## Engine draft continuation — text-only native smoke candidates
+
+StoredOuterV1/AccessorTests.cpp.fragment.txt + TEST_SCOPE.md sketch three custom-engine candidate cases Capability/PackageResolvedNull/WrongThread. NOT active engine/plugin tests, NOT compiled/run; source-case count51 unchanged. Non-null existing rooted package and worker member call would require separate `-McpStoredOuterAccessorDraftTests` isolated-host authorization. No NewObject/strong refs/forced GC proposed. Actual resolved-non-null/unresolved OuterPrivate/callback/no-load/direct-wrapper/lifetime coverage still absent. No new build/test/editor/patch application. Engine-only unified patch SHA/apply-check receipt unchanged; candidates not in patch. Current stock gate remains closed.
+
+## Explicit one-shot draft apply-check — PASS, not application
+
+User selected «Проверить apply --check»: one `git apply --check --whitespace=warn StoredOuterV1.unapplied.patch` on temporary copies only. Root `Temp/opencode/66991a186a4640188007e246e9f011e9`; five source files matched ReferenceSources.json before copying. Completed `2026-11-18T14:10:46.1177697Z`, exit0/no output; Before/After copy hashes unchanged, no new header created, NOT applied. Receipt `docs/engine-drafts/StoredOuterV1/ApplyCheckReceipt.json`, patch SHA256 `A33DE2BED209CDAB077B2E57B5D3876118C51A785078A3ED234E9D035AB8DEAE`. Temporary Invocation/CheckResult/ApplyCheck.log/Before/After retained. No retry, compile, tests, editor, engine/plugin working-source edits or installation. Only patch format/context against exact reference copies checked; full-checkout integration/ABI/no-resolution/lifetime remain unverified. Further execution needs permission; current gate closed.
+
+## Engine draft packaging — unified candidate, no verification execution
+
+Added `docs/engine-drafts/StoredOuterV1/StoredOuterV1.unapplied.patch`, generated as read-only unified diff construction against hashed installed reference sources + draft snippets and saved only in repository. Three intended CoreUObject files; no plugin adapter/build rules/tests in patch. NOT applied/apply-check verified/compiled/tested, no engine/plugin working sources touched. Diff generation is not patch applicability or runtime evidence; existing2/2 and17/17 remain scoped historical receipts. Gate unchanged/closed; future application requires separately approved matching engine checkout.
+
+## After outer2/2 — user-authorized unapplied engine draft
+
+User explicitly requested draft in repository, without applying to UE/builds/tests. `docs/engine-drafts/StoredOuterV1/` contains .txt proposed header/member declaration/implementation fragments, README and ReferenceSources.json (five read-only reference SHA256 hashes). NOT applied/dry-run checked/compiled/tested; no engine/plugin code or live binaries changed. New source finding: ObjectPtr copy constructors under UE_OBJECT_PTR_GC_BARRIER can call ConditionallyMarkAsReachable; draft uses const wrapper reference, superseding earlier copy-local prose. This is not an atomicity/lifetime/no-side-effect proof. Existing2/2 refusal and17/17 helpers do not validate the hypothetical export. No new Automation cases or runs; current plugin gate unchanged/closed.
+
 ## Outer exact2 — reconciled PASS; editor configuration refused
 
 Authorized single staging build succeeded UE5.6 Win64 Development85actions/~8m52s/exit0; non-preferred MSVC/deprecated StructUtils warnings remain. One isolated exact2 run completed `2026-11-18T12:10:20.4544640Z`, process exit0. Raw JSON matches Invocation exactly: OwnershipSCSWalkOuter.Defaults/ConfigurationRefusal, both Success/per-test warnings0/errors0; succeeded2/succeededWithWarnings0/failed0/notRun0/inProcess0. Info entry records **LATE_RESOLVE=1 REMOTE=0 EDITORONLY_DATA=1** in the tested plugin TU: gate remains unsupported and no outer read enabled. No guard/transient opt-in/old test rerun/retry.
