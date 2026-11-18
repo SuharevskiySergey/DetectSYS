@@ -1,0 +1,91 @@
+{
+  "schema": "beholder.guard-isolation-plan.v1",
+  "kind": "planning_data_only",
+  "dependencyClosureComplete": false,
+  "installationAuthorized": false,
+  "executionAuthorized": false,
+  "motionAuthorized": false,
+  "nativeOwnershipImplemented": false,
+  "assets": [
+    {
+      "role": "telescope_base",
+      "source": "/Game/BeholderPrototype/Telescopic/BP_BeholderTelescopic_Test",
+      "destination": null,
+      "referenceReview": [
+        {"kind": "component_class", "member": "HeadModule.ChildActorClass", "targetRole": "head_controller"},
+        {"kind": "graph_class_references", "targetRole": "head_controller"},
+        {"kind": "self_member_ownership", "targetRole": "telescope_base"}
+      ],
+      "guardBoundaries": ["public_command_entry", "update_before_state_write", "construction_snap", "ApplyExtension"]
+    },
+    {
+      "role": "body_leg",
+      "source": "/Game/BeholderPrototype/Body/BP_BeholderBodyLeg",
+      "destination": null,
+      "referenceReview": [
+        {"kind": "parent_class", "targetRole": "telescope_base"},
+        {"kind": "inherited_member_ownership", "targetRole": "telescope_base"},
+        {"kind": "graph_class_references", "targetRole": "head_controller"}
+      ],
+      "guardBoundaries": ["parent_event_handoff", "probe_revision_and_provenance", "public_derived_plan_writer"]
+    },
+    {
+      "role": "redistribution_leg",
+      "source": "/Game/BeholderPrototype/Telescopic/BP_BeholderStageRedistribution_Test",
+      "destination": null,
+      "referenceReview": [
+        {"kind": "parent_class", "targetRole": "body_leg"},
+        {"kind": "graph_class_references", "targetRole": "body_leg"},
+        {"kind": "inherited_member_ownership", "targetRole": "telescope_base"}
+      ],
+      "guardBoundaries": ["start_reverse_entry", "public_updater_entry", "ApplyRedistribution0", "ApplyRedistribution5", "Cancel_Abort_Release", "parent_tick_and_construction"]
+    },
+    {
+      "role": "head_controller",
+      "source": "/Game/BeholderPrototype/BP_Lapa5_Head",
+      "destination": null,
+      "referenceReview": [
+        {"kind": "component_class", "member": "HeadRig.ControlRigClass", "targetRole": "head_rig"},
+        {"kind": "self_member_ownership", "targetRole": "head_controller"}
+      ],
+      "guardBoundaries": ["public_command_entry", "PreForwardsSolve_before_state_write", "eyelid_material_write", "mapped_mesh_output_and_reset"]
+    },
+    {
+      "role": "head_rig",
+      "source": "/Game/BeholderPrototype/CR_Lapa5_Head",
+      "destination": null,
+      "referenceReview": [],
+      "guardBoundaries": ["ForwardsSolve", "RotateClaw0", "RotateClaw1", "RotateClaw2"],
+      "preserve": ["sphere_center_pivot_compensation", "bone_mapping", "no_shared_rig_edits"]
+    },
+    {
+      "role": "body_fixture",
+      "source": "/Game/BeholderPrototype/Body/BP_BeholderBody_Test",
+      "destination": null,
+      "referenceReview": [
+        {"kind": "component_class", "members": ["Leg0.ChildActorClass", "Leg1.ChildActorClass", "Leg2.ChildActorClass", "Leg3.ChildActorClass", "Leg4.ChildActorClass", "Leg5.ChildActorClass", "Leg6.ChildActorClass", "Leg7.ChildActorClass"], "targetRole": null, "unresolved": "Explicit per-slot selection of isolated body_leg versus redistribution_leg is required"},
+        {"kind": "graph_class_references", "targetRole": "telescope_base"},
+        {"kind": "graph_class_references", "targetRole": "body_leg"}
+      ],
+      "guardBoundaries": ["multi_leg_admission_before_first_goal", "per_leg_outcomes", "Hold_Component_Index_identity", "Abort_Cancel_Release", "watch_startup", "watchdog_tick"]
+    }
+  ],
+  "unresolvedInstallationGates": [
+    "Approve exact destination paths and operation scope",
+    "Select engine owner issuer and transport without silently adding C++ or a plugin",
+    "Confirm reparent and graph-reference remapping capability contracts",
+    "Inventory remaining dependencies and actual instance overrides",
+    "Define serialized lifecycle, rig reset, quiescence and partial-failure behavior",
+    "Define actual-pose capture producer and receipt provenance",
+    "Approve per-slot child classes for an isolated body fixture"
+  ],
+  "forbiddenAutomaticActions": [
+    "Derive destination paths or select slots from naming conventions",
+    "Create or reparent assets from this manifest",
+    "Modify source assets, current level or original LAPA5 assets",
+    "Reapply installed non-idempotent graph plans",
+    "Compile, execute functions, run tests, PIE or motion",
+    "Treat copied assets or a Blueprint flag as authenticated native ownership"
+  ],
+  "evidenceBoundary": "Source paths and listed edges come from partial read-only structural inspection. This is neither a full dependency export nor an installer input or runtime grant."
+}

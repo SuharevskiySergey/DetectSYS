@@ -6,7 +6,9 @@ from pathlib import Path
 from types import SimpleNamespace
 import traceback
 import time
+import tempfile
 import unittest
+import uuid
 
 
 class FakeActor:
@@ -33,17 +35,25 @@ class FailureCleanupTests(unittest.TestCase):
     def run_finish(self, actor, error):
         tree = ast.parse(Path(__file__).with_name('exercise_beholder_redistribution.py').read_text(encoding='utf-8'))
         function = next(n for n in ast.walk(tree) if isinstance(n, ast.FunctionDef) and n.name == 'finish')
-        written, removed = [], []
+        writer = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'write_terminal_report')
+        removed = []
         report = {}
         namespace = dict(actor=actor, COUNT=10, report=report,
             state=dict(recent_samples=deque([{'updates': 7}], maxlen=8), handle='observer'),
             traceback=traceback, time=time, pause_motion='none', cycles=1, dilation_owned=False,
-            path=SimpleNamespace(write_text=lambda text, **kwargs: written.append(json.loads(text))),
-            json=json, unreal=SimpleNamespace(unregister_slate_post_tick_callback=removed.append))
-        exec(compile(ast.Module(body=[function], type_ignores=[]), '<failure cleanup>', 'exec'), namespace)
-        namespace['finish'](error)
+            json=json, uuid=uuid, unreal=SimpleNamespace(unregister_slate_post_tick_callback=removed.append))
+        exec(compile(ast.Module(body=[writer, function], type_ignores=[]), '<failure cleanup>', 'exec'), namespace)
+        with tempfile.TemporaryDirectory(prefix='beholder_cleanup_') as directory:
+            path = Path(directory)/'report.json'
+            namespace['path'] = path
+            namespace['finish'](error)
+            self.assertEqual(json.loads(path.read_text(encoding='utf-8')), report)
+            archives = list(path.parent.glob('report_Archive_*.json'))
+            self.assertEqual(len(archives), 1)
+            self.assertEqual(str(archives[0]), report['terminalArchivePath'])
+            self.assertEqual(json.loads(archives[0].read_text(encoding='utf-8')), report)
         self.assertEqual(removed, ['observer'])
-        self.assertEqual(written, [report])
+        self.assertTrue(report['callbackUnregistered'])
         return report
 
     def test_errors_cancel_only_active_test_controller_without_rewriting_pose(self):

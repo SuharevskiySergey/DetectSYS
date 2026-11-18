@@ -8,6 +8,7 @@ import math
 from pathlib import Path
 import time
 import traceback
+import uuid
 from collections import deque
 
 import unreal
@@ -25,6 +26,24 @@ REASONS = {'disabled': 1, 'moved': 2, 'goal_changed': 3, 'mode_changed': 3, 'pro
 CONTACT_REASONS = {**REASONS, 'surface_lost': 6, 'invalid_probe_settings': 6}
 MONITOR_REASONS = {k: v for k, v in CONTACT_REASONS.items() if k not in ('profile_changed', 'invalid_step_cap', 'game_timeout')}
 MONITOR_REASONS['lost_before_begin'] = 6
+
+
+def write_terminal_report(path, report):
+    """Archive before updating the rolling report; never overwrite an archive.
+
+    Source-only addition, not yet exercised. Serialization/archive errors must
+    propagate rather than replace a previous terminal report with a false pass.
+    """
+    if report.get('running') is not False:
+        raise ValueError('Only completed observer reports may be archived')
+    archive = path.with_name(path.stem+'_Archive_'+uuid.uuid4().hex+path.suffix)
+    report['terminalArchivePath'] = str(archive)
+    text = json.dumps(report, indent=2, allow_nan=False)
+    # Exclusive creation guards against collisions as well as later re-runs.
+    # Write the archive first: a failed rolling write must not lose the evidence.
+    with archive.open('x', encoding='utf-8') as output:
+        output.write(text)
+    path.write_text(text, encoding='utf-8')
 
 
 def xyz(v):
@@ -156,6 +175,7 @@ def start(fault='none', contact_watch=False, monitor_contacts=False, monitor_fau
         actor.call_method('SetMotionDurations', (0.5, 0.5, 0.5))
         actor.call_method('SetLegExtension', (extension,))
     except Exception as exc:
+        report['traceback'] = traceback.format_exc()
         if dilation_owned:
             try:
                 unreal.GameplayStatics.set_global_time_dilation(world, dilation_before)
@@ -164,15 +184,23 @@ def start(fault='none', contact_watch=False, monitor_contacts=False, monitor_fau
             except Exception as cleanup_exc:
                 report['timeDilationRestoreError'] = repr(cleanup_exc)
         report.update(passed=False, running=False, error=repr(exc))
-        path.write_text(json.dumps(report, indent=2), encoding='utf-8')
+        try:
+            write_terminal_report(path, report)
+        except Exception as persistence_exc:
+            # Keep the actual setup failure as the primary exception rather
+            # than replacing it with a secondary report-storage failure.
+            raise exc.with_traceback(exc.__traceback__) from persistence_exc
         raise
     state = dict(phase=0, since=time.monotonic(), started=time.monotonic(), stable=0, cycle=1,
                  recent_samples=deque(maxlen=8))
 
     def finish(error=None):
+        if state.get('finishing'):
+            raise RuntimeError('Observer finish already started; refusing repeated cleanup/archive')
+        state['finishing'] = True
         if error is not None:
             report['failureMonotonicSeconds'] = time.monotonic()
-            report['traceback'] = traceback.format_exc()
+            report['traceback'] = ''.join(traceback.format_exception(type(error), error, error.__traceback__))
             report['recentSamplesAtFailure'] = list(state['recent_samples'])
             try:
                 native_state = actor.get_editor_property('RedistributionState')
@@ -192,12 +220,15 @@ def start(fault='none', contact_watch=False, monitor_contacts=False, monitor_fau
                     assert before == after
             except Exception as cleanup_exc:
                 report['failureCleanupError'] = repr(cleanup_exc)
+                report['failureCleanupTraceback'] = traceback.format_exc()
         if state.get('pause_owned'):
             try:
                 assert unreal.GameplayStatics.set_game_paused(world, False)
                 state['pause_owned'] = False
                 report['pauseRestoredOnFinish'] = True
             except Exception as exc:
+                report.setdefault('finishErrors', []).append(dict(
+                    phase='restore_pause', error=repr(exc), traceback=traceback.format_exc()))
                 error = error or exc
         if error is None and pause_motion != 'none':
             expected = cycles*(2 if pause_motion == 'both' else 1)
@@ -208,6 +239,8 @@ def start(fault='none', contact_watch=False, monitor_contacts=False, monitor_fau
                 state['restore_fault']()
                 report['faultInputRestored'] = True
             except Exception as exc:
+                report.setdefault('finishErrors', []).append(dict(
+                    phase='restore_fault_input', error=repr(exc), traceback=traceback.format_exc()))
                 error = error or exc
         if dilation_owned:
             try:
@@ -216,10 +249,28 @@ def start(fault='none', contact_watch=False, monitor_contacts=False, monitor_fau
                 assert abs(report['timeDilationAfter']-dilation_before) <= 1e-6
                 report['timeDilationRestored'] = True
             except Exception as exc:
+                report.setdefault('finishErrors', []).append(dict(
+                    phase='restore_time_dilation', error=repr(exc), traceback=traceback.format_exc()))
                 error = error or exc
+        # Attempt detach before serializing so a detach failure is itself part
+        # of the terminal evidence, not an exception masking the original fault.
+        try:
+            unreal.unregister_slate_post_tick_callback(state['handle'])
+            report['callbackUnregistered'] = True
+        except Exception as exc:
+            report['callbackUnregistered'] = False
+            report.setdefault('finishErrors', []).append(dict(
+                phase='unregister_callback', error=repr(exc), traceback=traceback.format_exc()))
+            error = error or exc
+        if error is not None and 'traceback' not in report:
+            report['traceback'] = ''.join(traceback.format_exception(type(error), error, error.__traceback__))
         report.update(passed=error is None, running=False, error=repr(error) if error else None)
-        path.write_text(json.dumps(report, indent=2, allow_nan=False), encoding='utf-8')
-        unreal.unregister_slate_post_tick_callback(state['handle'])
+        try:
+            write_terminal_report(path, report)
+        except Exception as persistence_exc:
+            if error is not None:
+                raise error.with_traceback(error.__traceback__) from persistence_exc
+            raise
 
     def geometry():
         validate_nested_walls(sleeves)
@@ -375,6 +426,10 @@ def start(fault='none', contact_watch=False, monitor_contacts=False, monitor_fau
         state.update(phase=5, since=time.monotonic(), injected=True)
 
     def tick(_):
+        if state.get('finishing'):
+            # If engine detach failed, a retained callback must stay inert. This
+            # does not prove it was freed and is not a native motion stop.
+            return
         try:
             assert time.monotonic()-state['started'] < 45, 'Redistribution test timed out'
             read_stamp = tuple(actor.get_editor_property(n) for n in
@@ -783,6 +838,10 @@ def start(fault='none', contact_watch=False, monitor_contacts=False, monitor_fau
                 state.update(injected=True, updates_at_fault=updates)
                 inject_fault(fault)
         except Exception as exc:
+            if state.get('finishing'):
+                # A terminal write/unregister failure is not a fresh observer
+                # failure: repeating finish would repeat native cleanup too.
+                raise
             finish(exc)
 
     state['handle'] = unreal.register_slate_post_tick_callback(tick)

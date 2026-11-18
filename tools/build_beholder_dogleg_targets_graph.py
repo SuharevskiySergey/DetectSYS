@@ -1,12 +1,17 @@
-"""UNINSTALLED, UNVERIFIED Blueprint plan for one numeric dogleg target snapshot.
+"""Installed targets; compilation and 80 limited editor numeric cases verified.
 
 No actor/component writes, motion admission, Tick, interpolation or actuation.
-Create/inspect an isolated Blueprint Function Library before applying this
-non-idempotent plan. NumericInputsAccepted never authorizes motion.
+Do not reapply this non-idempotent plan to the existing asset. A new empty
+Function Library needs functionDeclaration through add_function FIRST: the
+batch handler needs an existing graph. Then use graphName and operations;
+the declaration step in the batch reuses the matching function signature.
+NumericInputsAccepted never authorizes motion. Remaining precision/geometry
+cases are untested; further numeric calls require separate permission.
 """
 import json
 
 from build_beholder_plane_graph import Plan
+from beholder_dogleg_job_contract import TARGETS_INPUT_LAYOUT, TARGETS_OUTPUT_LAYOUT
 
 BP = '/Game/BeholderPrototype/Telescopic/BP_BeholderDoglegTargets'
 PARENT = '/Script/Engine.BlueprintFunctionLibrary'
@@ -15,19 +20,14 @@ HALF_DEGREES_TO_RADIANS = '0.0087266462599716479'
 
 
 def outputs():
-    return [('NumericInputsAccepted', 'bool'), ('MotionAuthorized', 'bool'),
-            ('CompensatedExtension', 'float')]+[
-        (f'Stage{i}Target', 'float') for i in range(10)]+[
-        (f'Joint{i}{axis}Target', 'float') for i in range(1, 10) for axis in ('Pitch', 'Yaw')]
+    return list(TARGETS_OUTPUT_LAYOUT)
 
 
 def plans():
     p = Plan(FUNCTION)
     p.ops.append(dict(edit='add_function', id='entry', functionName=FUNCTION,
                       pure=False, isPublic=True,
-                      inputs=[dict(name=n, type=t) for n,t in
-                              [('BaseExtension', 'float'), ('Phase', 'float'),
-                               ('AmplitudeDegrees', 'float'), ('UseYaw', 'bool')]],
+                      inputs=[dict(name=n, type=t) for n,t in TARGETS_INPUT_LAYOUT],
                       outputs=[dict(name=n, type=t) for n,t in outputs()]))
     defaults = {n: False if t == 'bool' else 0 for n,t in outputs()}
     p.node('reject', 'FunctionResult', pinDefaults=defaults)
@@ -80,8 +80,13 @@ def plans():
         for joint in (1, 2, 3):
             source = 'middle_angle.ReturnValue' if joint == 2 else 'angle.ReturnValue'
             p.wire(source, f'{result}.Joint{joint}{axis}Target')
-    return dict(blueprintPath=BP, parentClass=PARENT, operations=p.ops,
-                installed=False, verificationPerformed=False,
+    declaration = {k: v for k,v in p.ops[0].items() if k not in ('edit', 'id')}
+    declaration['blueprintPath'] = BP
+    return dict(blueprintPath=BP, parentClass=PARENT, graphName=FUNCTION,
+                functionDeclaration=declaration, operations=p.ops,
+                installed=True, compilationVerified=True, numericVerificationPerformed=True,
+                numericVerificationCases=80,
+                numericVerificationReport='Saved/BeholderDoglegNumeric_1aaefde320124c11b27cfbc2333055c1.json',
                 runtimeIKExecuted=False, motionAuthorized=False)
 
 
